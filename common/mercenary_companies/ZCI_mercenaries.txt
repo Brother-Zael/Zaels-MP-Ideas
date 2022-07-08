@@ -1,0 +1,78 @@
+### Zael Idea Merc Companies to be Implemented ###
+# Bring in other mercs from base (i.e. regional, swiss, black company, free companies, etc.)
+# Set merc size limit to 20 when implementing!
+
+ZCI_merc_freer_company = {
+    regiments_per_development = 0.025
+	artillery_cap = 0
+	cavalry_cap = 0
+	trigger = {
+		always = no
+	}
+}
+
+ZCI_merc_freest_company = {
+    regiments_per_development = 0.025
+	artillery_cap = 0
+	cavalry_cap = 0
+	trigger = {
+		always = no
+	}
+}
+
+ZCI_merc_freeb_company = {
+    regiments_per_development = 0.025
+	artillery_cap = 0
+	cavalry_cap = 0
+	trigger = {
+		always = no
+	}
+}
+
+ZCI_merc_freed_company = {
+    regiments_per_development = 0.025
+	artillery_cap = 0
+	cavalry_cap = 0
+	trigger = {
+		always = no
+	}
+}
+
+ZCI_merc_freen_company = {
+    regiments_per_development = 0.025
+	artillery_cap = 0
+	cavalry_cap = 0
+	trigger = {
+		always = no
+	}
+}
+
+ZCI_merc_siege_company = {
+    regiments_per_development = 0.025
+	cavalry_cap = 0
+	artillery_weight = 0.5
+	artillery_cap = 5
+	cost_modifier = 1.5
+	modifier = {
+		movement_speed = 0.05
+		land_attrition = -0.1
+		siege_ability = 0.1
+	}
+	trigger = {
+		always = no
+	}
+}
+
+ZCI_merc_cannon_stack = {
+	regiments_per_development = 0.025
+	cavalry_cap = 0
+	artillery_weight = 1
+	cost_modifier = 1.5
+	modifier = {
+		reinforce_speed = -0.33
+	}
+	trigger = {
+		always = no
+	}
+}
+	

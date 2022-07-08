@@ -1,0 +1,277 @@
+steppe_supplies_policy = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = horde_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = horde_gov_ideas
+	}
+	
+	leader_land_shock = 1
+	horde_unity = 2
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
+
+
+to_the_ground_policy = { 
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = horde_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = horde_gov_ideas
+	}
+	
+	raze_power_gain = 0.33
+	horde_unity = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+calming_the_tides_policy = { 
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = horde_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = horde_gov_ideas
+	}
+	
+	cavalry_cost = -0.1
+	build_cost = -0.15
+	
+	ai_will_do = {
+		factor = 1
+
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
+	}
+}
+
+esprit_de_corps_policy = { 
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = horde_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = horde_gov_ideas
+	}
+	
+	years_of_nationalism = -5
+	land_morale = 0.05
+	
+	ai_will_do = {
+		factor = 1
+
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
+	}
+}
+
+steppe_nomad_migrations_policy = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = exploration_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = exploration_ideas
+	}
+	
+	colonist_placement_chance = 0.15
+	native_uprising_chance = -0.5
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+passport_to_merchants_policy = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = trade_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = trade_ideas
+	}
+	
+	merchants = 1
+	global_own_trade_power = 0.1
+
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+war_horses_policy = { 
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = jurisprudence_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = jurisprudence_ideas
+	}
+
+	religious_unity = 0.25
+	shock_damage = 0.1
+	
+	ai_will_do = {
+		factor = 0.75
+		modifier = {
+			factor = 0
+			NOT = { army_tradition = 2 }
+		}			
+		modifier = {
+			factor = 1.5
+			army_tradition = 30
+		}
+		modifier = {
+			factor = 1.5
+			army_tradition = 50
+		}
+		modifier = {
+			factor = 1.5
+			army_tradition = 80
+		}
+	}
+}
+
+the_best_defense_policy = { 
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = innovativeness_ideas
+	}
+
+	cavalry_fire = 0.3
+	global_institution_spread = 0.1
+	
+	ai_will_do = {
+		factor = 1.0
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
+
+fear_tactics_policy = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = diplomatic_ideas
+	}
+
+	ae_impact = -0.2
+	possible_condottieri = 2
+	
+	ai_will_do = {
+		factor = 1.0
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
+
+kharash_policy = { 
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = influence_ideas
+	}
+	
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = influence_ideas
+	}
+
+	cavalry_shock = 0.1
+	vassal_forcelimit_bonus = 1
+
+	ai_will_do = {
+		factor = 1.0
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
+

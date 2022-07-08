@@ -1,0 +1,111 @@
+﻿l_english:
+
+
+ ########## Jurisprudence Events ##########
+ 
+ # Prepoderance
+ ideagroups.1950.t:0 "Prepoderance of Evidence"
+ ideagroups.1950.d:0 "Our exemplary courts have discovered a prepoderance of evidence in a major case implicating a number of high ranking officials in our country. The resulting verdicts, while somewhat embarassing, has removed a large portion of corruption from our nation's bureaucracy."
+ prepond:0 "Arrest the Scoundrels!"
+ # Slavery
+ ideagroups.1951.t:0 "Abolish Slavery"
+ ideagroups.1951.d:0 "How can a nation that purpotes to be free and fair likewise hold others in lifetime bondage? If we are to maintain the integrety of our nation we must remedy this."
+ abolish:0 "Abolish Slavery Immediately!"
+ noabolish:0 "A Slow Transition is Needed..."
+ # Good Governance
+ ideagroups.1952.t:0 "Good Governance"
+ ideagroups.1952.d:0 "Good Governance is it's own reward, but sometimes it's extended effects become apparent in an immediate and lucrative way.
+ goodgov:0 "Good Governance"
+ # Expanded Bureaucracy
+ ideagroups.1953.t:0 "Expanded Bureaucracy"
+ ideagroups.1953.d:0 "Recently we've had a surplus of recruits and interns, which has really bolstered our clerks and other low-level bureaucratic entities. Their petty squabbles should be outweighed by their usefulness, so long as we do not expand too greedily."
+ expandbureau:0 "Expanded Bureaucracy"
+ # Refugees and Immigrants
+ ideagroups.1954.t:0 "Refugees and Immigrants"
+ ideagroups.1954.d:0 "Recent progressive laws have seen an influx of refugees and immigrants, primarily the free thinkers and open-minded not welcomed elsewhere. The grateful families have a lot to contribute with their varied experiences."
+ refandim:0 "Refugees and Immigrants"
+ # Concentrated Diaspora
+ ideagroups.1955.t:0 "Concentrated Diaspora"
+ ideagroups.1955.d:0 "Our forward thinkning refugee policies have had the unforseen consequence of developing a significant concentrated of certain diasporas. While slightly unmanageable with current infrastructure, this will undoubtedly bring expanded benefits as well!"
+ condiasp:0 "Concentrated Diaspora"
+ # Overconcentrated Diaspora
+ ideagroups.1956.t:0 "Overconcentrated Diaspora"
+ ideagroups.1956.d:0 "Our forward thinking refugee policies have backfired. The amount of refugees we've received have far outpaced our capacity to handle, and alarming levels of interethnic tensions have arisen. Let us hope it is worth the headaches."
+ overcondiasp:0 "Overconcentrated Diaspora"
+ # Stable Nation
+ ideagroups.1957.t:0 "A Stable Nation"
+ ideagroups.1957.d:0 "Proper legal structuring has brought about great stability to our realm. Now we just need to sit back and reap the benefits."
+ stabnat:0 "A Stable Nation"
+ # Less Radical Reforms
+ ideagroups.1958.t:0 "Less Radical Reforms"
+ ideagroups.1958.d:0 "Our efficient and exemplary governing has lead to numerous smaller, palatable reforms, which has seen great returns."
+ lessrad:0 "Less Radical Reforms"
+ # Corrupt Officials Lash Out
+ ideagroups.1959.t:0 "Corrupt Officials Lash Out
+ ideagroups.1959.d:0 "Our reforms have been popular with many people, but the corrupt parasites of our society are not those people. These parasites have raised an army against the central government in order to 'regain their tradition rights'"
+ lashout:0 "Greed never prospers."
+ 
+ ########## Prestige Events ##########
+ 
+ # Popular Support For Our Forces
+ EVTNAME6100:0 "Popular Support For Our Forces"
+ EVTDESC6100:0 "Our Population is fully behind our military forces at home and abroad! Huzzah the Army! Huzzah the Navy! HUZZAH US!!"
+ EVTOPTA6100:0 "HUZZAH"
+ # Popular Support For Our Forces Diminishes
+ EVTNAME6101:0 "Popular Support For Our Forces Diminishes"
+ EVTDESC6101:0 "Our populations at home have been disturbed by recent spurious rumors of attrocities committed by our forces. This obvious fake news must be spread by our rivals!"
+ EVTOPTA6101:0 "Bloody Sheeple!"
+ EVTOPTB6101:0 "Plausibly Denied."
+ # Respected Families Produce Leaders
+ EVTNAME6102:0 "Respected Families Produce Leaders"
+ EVTDESC6102:0 "A respected and respectable family in our land has brought for a... somewhat promising young leader. While the kid isn't anything special, really, they aren't incompetent and bringing them onboard will look good for us. The only question is where to place them."
+ EVTOPTA6102:0 "To the Navy!"
+ EVTOPTB6102:0 "To the Army!"
+ # Aristocrats Concerned
+ EVTNAME6103:0 "Aristocrats Concerned"
+ EVTDESC6013:0 "Aristocrats are incredibly concerned that the state is taking all the credit for itself and ignoring the individual houses and dynasties that make up the nation."
+ EVTOPTA6103:0 "Bah Humbug"
+ EVTOPTB6103:0 "I Suppose We Can Share Some Credit."
+ # Monumental Developments
+ EVTNAME6104:0 "Monumental Developments"
+ EVTDESC6104:0 "A rich and esteemed group of investors have offered to fund the renovation of one of our great projects, and all we have to do is put their name on it somewhere!"
+ EVTOPTA6104:0 "It's a Win/Win!"
+ naval_developments:0 "Monumental Development"
+ # Monumental Hubris
+ EVTNAME6105:0 "Monumental Hubris"
+ EVTDESC6105:0 "Apparently one of our existing monuments is giving off more glory to the sponsors than our nation."
+ EVTOPTA6105:0 "Buy Them Out!"
+ EVTOPTB6105:0 "Make Our Bit Larger!"
+ # Prestigious Technical Developments
+ EVTNAME6108:0 "Prestigious Technical Developments"
+ EVTOPTA6108:0 "Hail!"
+ # Slanderous Technical Developments
+ EVTNAME6109:0 "Slanderous Technical Developments"
+ EVTOPTA6109:0 "Slanderous!"
+ EVTOPTB6109:0 "FOOLS ALL!"
+ # We Rule
+ EVTNAME6110:0 "We Are The Best!"
+ EVTDESC6110:0 "We are the best, and everyone knows it. Let them stand in awe of our nation's prodigious size!"
+ EVTOPTA6110:0 "It's ok to stare."
+ # We're Not Jealous
+ EVTNAME6111:0 "We're Not Jealous"
+ EVTDESC6111:0 "The Queen has remarked today about some of our Rivals remarkable growth in size recently, but that we shouldn't worry. It's nothing, probably. Definitely nothing."
+ EVTOPTA6111:0 "I'm sure it's fine."
+ EVTOPTB6111:0 "Look, shinies!"
+ # Embassy is closed
+ EVTNAME839:0 "Embassy is closed."
+ EVTDESC839:0 "A recent spat of unproductive language and grand standing has led to one of our embassy's in some insignificant nation to be closed on order of their government. Embarassing, but certainly not too important.
+ EVTOPTA839:0 "Maybe we should apologize?"
+ # Ambassador gains renown
+ EVTNAME840:0 "Ambassador Gains Renown"
+ EVTDESC840:0 "Recently our ambassador to some minor nation gained a major propoganda victory, earning them a large amount of renown - which they made sure benefited us, of course."
+ EVTOPTA840:0 "Of Course."
+ # Our Nation is the Best
+ EVTNAME6310:0 "Our Nation is the Best"
+ EVTDESC6310:0 "Obviiously our nation is the best and nobody even comes close."
+ EVTOPTA6310:0 "Obviously."
+ # Bellicose General
+ EVTNAME6311:0 "Bellicose General"
+ EVTDESC6311:0 "A particularly bellicose member of our general staff has made clear to every nation our rightful territorial claim in a less than productive manner. Namely by slaughtering a peasant village."
+ EVTOPTA6311:0 "Shame."
+ EVTOPTB6311:0 "Cover it up."

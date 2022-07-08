@@ -1,0 +1,396 @@
+### JUNE 12th 2022: Balancing of June 5th rework
+
+Inno:
+Idea cost -5% to -10%
+
+Religious:
+Tax income 12/year to 18/year
+
+Economic:
+Added 10% gov cap to idea 1
+
+Juris:
+reform progress 20% to 33%
+promote culture cost -25%
+
+Qual:
+yearly professionalism 0.2% to 0.5%
+
+### JUNE 10th 2022: Balancing of June 5th rework
+
+Const:
+Build cost moved to slot 2
+
+Divine:
+Fixed warscore vs other religions not showing
+replaced land morale with morale recovery speed 10%
+replaced missionary strength capstone with morale dmg to backrow -10%
+
+Horde:
+Made mutually exclusive with aristocracy like it should be
+
+### JUNE 8th 2022: Continuation of June 5th edits (final check)
+Eco:
+interest -0.5 to -1
+monthly autonomy change to -0.1
+
+Const:
+goods produced 20% to 10%
+removed prestige decay -1%
+
+eco-land:
+replace tax eff with trade eff 10%
+prod eff 15% to 10%
+
+eco-ocean:
+removed prod eff
+trade eff 10% to 15%
+
+leader-nob:
+replaced leader cost -10% with leader fire +2
+
+### JUNE 7th 2022: Continuation of June 5th edits
+Eco:
+added CoT upgrade cost -25% to idea 2
+added trade efficiency 10% to idea 2
+removed flat money income
+move state gov cost to idea 5
+remove reduce inflation cost
+
+Indus->Construction:
+added jains loyalty +20% that I missed before
+replace great proj with prestige decay -1%
+fort maint moved to idea 6
+
+Rev:
+replace merchant with stab cost -10%
+fort def 10% to 20%
+
+Relig:
+tax income mod +40%
+war exhaust -0.1 to -0.07
+missionary from idea 3 to idea 4
+
+def:
+Attrition +1 to +2
+removed drill gain modifier
+moved garrison size to be with attrition reduction
+garrison size 20% to 40%
+defensiveness 20% to 30%
+
+leader:
+war exhaustion -0.05 to monarch dip +1
+rep trad from 0.2 to 0.1
+
+Divine:
+moved morale 5% to slot 3
+added inf shock 0.15 to slot 4
+culture conversion -10% to ws vs other religions -10%
+
+**POLICIES**
+
+def-leader:
+added defensiveness 15%
+
+def-relig:
+culture conv -25% to -33%
+unrest -2 to flat income +3/month
+
+def-eco:
+fort maint replaced with interest -1
+inflation reduction replaced with inflation reduction action cost -0.5
+
+def-ocean:
+fort def 10% to 20%
+
+def-explo:
+uprising chance -25% to -50%
+
+def-const:
+replaced with fort maint -33%
+
+def-dip:
+attrition +1 changed to army trad decay -1%
+garrison growth changed to special forces limit +5%
+added ae_impact -10%
+
+def-trade:
+replaced garrison growth with mercantilism cost -33%
+domestic power 20% to 30%
+
+def-off:
+replaced merchant +1 with placed merchant power +10
+
+def-inno:
+ica 5% to 10%
+fort def 10% to fire damage received -10%
+
+def-imp:
+war exhaust -0.03 to -0.05
+fort def 15% to 25%
+
+def-juris:
+attrition from -10% to -20%
+
+def-prestige:
+fort def 5% to 20%
+garrison size 20% to land morale 10%
+
+inno-rev:
+Added global prosperity gain +0.05
+
+inno-landtrade:
+prod-eff 5% to 15%
+
+inno-divine:
+goods produced 5% to 10%
+
+inno-prestige:
+yearly prestige +0.5 to trade efficiency 10%
+
+inno-off:
+land fire dmg changed to ica 10%
+movement speed 5% to leader cost -10%
+
+inno-qual:
+land fire damage 5% to 10%
+
+relig-noble:
+replace missionary str 1% with culture conversion -20%
+
+relig-rev:
+morale 5% to 10%
+
+eco-qual:
+arty combat 5% to 15%
+
+eco-strat:
+land maint to arty cost -20%
+
+eco_off:
+ica 5% to reinforce speed 10%
+
+eco-rev:
+replace build cost -15% with merc disc 5%
+buff merc maint from -10% to -25%
+
+eco-nob:
+changed tax modifier to static land FL 20
+
+eco-quant:
+build cost to regiment cost -10%
+
+leader-dip:
+adm advisor cost -10% to dip advisor cost -20%
+
+leader-qual:
+land morale 5% to 10%
+changed to mil policy from adm
+
+leader-horde:
+moved from adm to mil policy
+
+leader-div:
+monarch lifespan +10% to max abso +10
+
+leader-ocean:
+admin advisor cost -5% to -20%
+
+const-div:
+prod eff. 5% to 15%
+
+const-quant:
+naval trad removed
+army trad remove
+Naval FL buffed to 20%
+construction cost -20% added
+Moved from mil to adm policy
+
+const-nob:
+land attrition -10% to cav cost -20%
+
+const-trade:
+goods produced 5% to 10%
+
+const-rev:
+replaced prod eff with land FL 10%
+
+const-prest:
+build cost -10% changed to great project cost -20%
+
+trade-qual:
+prod eff 5% to 10%
+
+trade-quant:
+prod eff 5% to 10%
+
+### JUNE 5th 2022: Complete overhaul of idea groups after 5 campaigns' feedback
+Changelog
+
+Nob
+Moved leader shock to idea 2
+removed trad decay
+moved shock_damage_received to idea 6
+removed manuever bonus and added diplo upkeep and static FL bonus to slot 4
+buffed shock damage received from 10 to 15%
+
+Rev
+morale 5% changed to leader shock +1
+moved fort def 10% to idea 2
+added +2 diplo relations to 3
+added +1 merchant to 4
+merc disc increased to 7.5%
+
+Theo
+buff idea 2 from fire dmg -10 to -15
+infantry_fire 0.1 to 0.15
+mp in true faith from 10% to 25%
+
+Def
+drill gain 0.1 to 0.2
+idea to gained leader siege +1
+supply train +33% FL to -20% attrition
+fire dmg receive -5% to -10%
+backrow dmg 5% to 10%
+hostile attrition 1 to 2
+
+Off
+leader shock to leader siege
+movement 5% to 10%
+
+Qual
+Removed arty combat ability 10%
+
+Quant
+bonus FL of 30 to 20%
+static FL of 6 to idea 4
+
+Inno
+fire damage 5% to 10%
+advisor cost -15% to -20%
++1 leader pool changed to leader fire +1, leader cost -10%
+
+Relig
+flat tax of 1 duc/month to 1
+moved 1 missionary to idea 3
+deus vult to idea 3
+culture conversion -25% to -50%
+added same culture advisor cost -25% to capstone
+enforce_religion_cost = -200% to idea 7
+removed estate loyalties from capstone
+land morale from 5% to 10%
+removed naval morale
+
+Eco
+added state governing cost -20% to idea 1
+Remove Construction Cost and moved tax to idea 3
+global tax income from 48 to 2
+Add land/naval maintenance -10% to idea 2
+Interest -1 to -0.5
+Autonomy -10% to -5%
+removed production efficiency
+inflation -0.15 to -0.1
+added inflaction cost reduc -25%
+manpower to idea slot 3
+
+Leadership
+added no stab hit on monarch death to idea 1
+same_culture advisor cost -20% to all advisor_cost -10%
+corruption -0.05 to corruption -0.1
+replaced idea slot 1 with reform progress growth 10
+republic trad 0.3 to 0.2
+
+Indus -> construction
+Build cost -15% to -20%
+replaced maintenance mod with build time -25%
+burghers loyalty buffed to 20%
+removed inflation cost reduction
+added trade company investment cost -20% to idea 3
+fort maint -20% added to idea 5
+production efficiency 15% to 20%
+goods produced buffed to 20%
+added great project upgrade cost -20% to idea 7
+removed state governing cost
+
+Jurisprudence
+fixed all estate loyalty since it was bug fixed in 1.33
+province ws cost -0.15 to -0.25
+
+Strat
+movement speed 10% to 15%
+
+Land Trade
+trade eff. 10% to 20%
+
+Prestige
+max abso 15 to 25
+added claim_duration +20%
+replaced morale with trad_from_battles 0.25
+
+Ocean Trade
+trade eff. 25% to 20%
+
+Imperial
+replaced land_leader shock +1 with land shock 10%
+replaced merchant +1 with prod eff. +10%
+
+MAY 24th 2022: Reworking of AI weight for idea groups.
+Religious Ideas
+AI weight for Celestial Empire from 2.0 to normal (0.5)
+
+Leadership Ideas
+AI weight from .9 to .75 (more equal compared to "normal" for ideas)
+
+Jurisprudence
+AI weight for Confucian countries has be decupled (10x)
+
+Land Trade Ideas
+AI weight buffed from 0.7 to 0.75
+3x AI weight for merchant republics removed
+3x AI weight added for Veche Republics, Free Cities, Sich Rada, and Oligarchies.
+
+Exploration Ideas
+Huge amount of reworks.... like a lot. There was a bunch of stuff that just shouldn't be there/excludes things that didn't make since. Main change that should be felt in game is that the ai will no longer take this group after 1540.
+
+Prestige Ideas
+AI weight moved from 1.0 to 0.75 (I nerfed the idea prior to this campaign but didn't nerf the ai weight to match)
+
+Sea Trade Ideas
+AI weight base from 1.0 to 0.75
+AI weight for plutocracies quadrupled
+3x AI weight for trading cities, venetian gov't, colonial nations, eastern plutocracies, and countries with Hakka primary culture.
+
+
+
+
+
+
+
+### FEB 2nd 2022: rebalancing of eco and offensive:
+
+**IDEAS**
+
+ECO:
+reduced manpower bonus from 10% to 5%
+dev cost from 10% to 5%
+
+INDUS:
+build cost from 15% to 20%
+goods produced from 5% to 10%
+
+Offensive
+removed army morale recovery (was never supposed to be there)
+removed leader shock pip (added to policy)
+reduced land force limit from 20% to 10%
+reduced movement speed from 10% to 5%
+
+**POLICIES**
+
+DEFENSIVE-INDUSTRIAL
+FL +15% to FL +5%
+Added Fire Damage Received -10%
+
+Strategic-Industrial
+removed Fire Damage Received -10%
+arty dmg from backrow 5% to 10%
+added arty cost -10%

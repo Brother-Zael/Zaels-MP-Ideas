@@ -1,0 +1,382 @@
+namespace = zaelscrappyideaevents
+
+###############################
+# Jurisprudence
+###############################
+
+# Prepoderance Of Evidence
+country_event = {
+	id = ideagroups.1950
+	title = "ideagroups.1950.t"
+	desc = "ideagroups.1950.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+		NOT = {
+			corruption = 0
+			corruption = 1
+		}
+	}	
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "prepond"
+		add_corruption = -4
+		prestige = -1
+	}
+}
+
+# Tolerance for all
+country_event = {
+	id = ideagroups.217
+	title = ideagroups.217.t
+	desc = ideagroups.217.d
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+		NOT = { religious_unity = 1.0 }
+		NOT = {	has_country_modifier =  "tolerance_for_all" }
+	}
+
+	option = {
+		name = ideagroups.217.a
+		add_estate_dhimmi_loyalty_effect = yes
+		add_country_modifier = {
+			name = "tolerance_for_all"
+			duration = 3650
+		}
+	}
+}
+
+# For Freedom!
+country_event = {
+	id = ideagroups.213
+	title = ideagroups.213.t
+	desc = ideagroups.213.d
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+		is_at_war = yes	
+		NOT = {	has_country_modifier =  "for_freedom" }
+	}
+
+	option = {
+		name = ideagroups.213.a
+		add_estate_burghers_loyalty_effect = yes
+		add_country_modifier = {
+			name = "for_freedom"
+			duration = 3650
+		}
+	}
+}
+
+
+# Abolishment of Slavery
+country_event = {
+	id = ideagroups.1951
+	title = "ideagroups.1951.t"
+	desc = "ideagroups.1951.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+		trade_goods = slaves
+		NOT = {
+			owner = { has_country_modifier = the_abolish_slavery_act }
+		}
+		any_country = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = improved_relation
+			}
+			NOT = {
+			has_country_modifier = the_abolish_slavery_act
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "abolish"
+		effect = {
+			add_prestige = 5
+			add_country_modifier = {
+				name = innovative_modifier
+				duration = 3650
+			}
+			add_country_modifier = {
+				name = "the_abolish_slavery_act"
+				duration = -1
+			}
+			custom_tooltip = abolished_slavery_act_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = slaves
+					}
+					change_trade_goods = unknown
+					remove_building = tradecompany
+					if = {
+						limit = { has_province_modifier = slave_entrepot }
+						remove_province_modifier = slave_entrepot
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "noabolish"
+		add_years_of_income = 0.5
+		random_owned_province = {
+			seperatist_rebels = 2
+		}
+		random_owned_province = {
+			seperatist_rebels = 2
+		}
+		random_owned_province = {
+			seperatist_rebels = 2
+		}
+	}
+}
+
+# Good Governance
+country_event = {
+	id = ideagroups.1952
+	title = "ideagroups.1952.t"
+	desc = "ideagroups.1952.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "goodgov"
+		add_years_of_income = 3
+		add_country_modifier = {
+			name = "goodgov"
+			production_efficiency = 0.05
+			duration = 3650
+		}
+	}
+}
+
+# Expanded Bureaucracy
+country_event = {
+	id = ideagroups.1953
+	title = "ideagroups.1953.t"
+	desc = "ideagroups.1953.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "expandbureau"
+		add_country_modifier = {
+			name = "expandbureau"
+			administrative_efficiency = 0.05
+			yearly_corruption = 0.1
+			duration = 1825
+		}
+	}
+}
+
+# Refugees and Immigrants
+country_event = {
+	id = ideagroups.1954
+	title = "ideagroups.1954.t"
+	desc = ideagroups.1954.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "refandim"
+		add_country_modifier = {
+			name = "refandim"
+			idea_cost = -0.05
+			global_institution_spread = 0.1
+			duration = 3650
+		}
+	}
+}
+
+# Concentrated Diaspora
+country_event = {
+	id = ideagroups.1955
+	title = "ideagroups.1955.t"
+	desc = "ideagroups.1955.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			has_idea_group = jurisprudence_ideas
+			has_country_modifier = "refandim"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "condiasp"
+		add_country_modifier = {
+			name = "condiasp"
+			idea_cost = -0.05
+			tech_cost = -0.05
+			global_institution_spread = 0.05
+			global_autonomy = 0.2
+			duration = 1825
+		}
+	}
+}
+
+# Overconcentrated Diaspora
+country_event = {
+	id = ideagroups.1956
+	title = "ideagroups.1956.t"
+	desc = "ideagroups.1956.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			has_idea_group = jurisprudence_ideas
+			has_country_modifier = "refandim"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "overcondiasp"
+		add_country_modifier = {
+			name = "overcondiasp"
+			global_unrest = 3
+			global_autonomy = 0.2
+			duration = 1825
+		}
+	}
+}
+
+# Stable Nation
+country_event = {
+	id = ideagroups.1957
+	title = "ideagroups.1957.t"
+	desc = "ideagroups.1957.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "stabnat"
+		stability = 1
+		add_years_of_income = 0.3
+	}
+}
+
+# Less Radical Reforms
+country_event = {
+	id = ideagroups.1958
+	title = "ideagroups.1958.t"
+	desc = "ideagroups.1958.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "lessrad"
+		adm = 50
+		dip = 50
+		mil 50
+	}
+}
+
+# Corrupt Officials Lash Out
+country_event = {
+	id = ideagroups.1959
+	title = "ideagroups.1959.t"
+	desc = "ideagroups.1959.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_idea_group = jurisprudence_ideas
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "lashout"
+		corruption = -2
+		random_owned_province = {
+			noble_rebels = 3
+		}
+		reduce_estate_nobles_loyalty_effect = yes
+	}
+}
