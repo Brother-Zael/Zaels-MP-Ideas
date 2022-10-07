@@ -16,7 +16,7 @@ armed_neutrality_act = {
 	}
 	
 	mercantilism_cost = -0.33
-	global_own_trade_power = 0.3
+	hostile_attrition = 1
 
 	ai_will_do = {
 		factor = 0.6
@@ -105,8 +105,8 @@ letters_of_marque = {
 		full_idea_group = exploration_ideas
 	}
 	
-	heavy_ship_power = 0.10
-	privateer_efficiency = 0.33
+	native_uprising_chance = -0.3
+	treasure_fleet_income = 0.1
 
 	
 	ai_will_do = {
@@ -250,8 +250,7 @@ beneficial_neglect = {
 	}
 
 	colonist_placement_chance = 0.05
-	global_ship_cost = -0.1
-
+	native_assimilation = 0.25
 
 	ai_will_do = {
 		factor = 1
@@ -303,8 +302,7 @@ trade_connection_policy = {
 		full_idea_group = trade_ideas
 	}
 
-	merchants = 1
-	caravan_power = 0.1
+	merchants = 2
 
 	ai_will_do = {
 		factor = 0.8		
@@ -342,8 +340,9 @@ nobility_embassy_act = {
 		full_idea_group = aristocracy_ideas
 		full_idea_group = exploration_ideas
 	}
-	disengagement_chance = 0.2
-	movement_speed_in_fleet_modifier = 0.25
+
+	leader_land_manuever = 1
+	range = 0.25
 
 	ai_will_do = {
 		factor = 0.8
@@ -366,7 +365,7 @@ naval_secrecy_act = {
 		full_idea_group = defensive_ideas
 	}
 
-	global_spy_defence = 0.2
+	global_spy_defence = 0.33
 	native_uprising_chance = -0.5
 
 	ai_will_do = {
@@ -394,8 +393,8 @@ cloth_quality_edict = {
 		full_idea_group = quality_ideas
 	}
 
-	production_efficiency = 0.1
-	center_of_trade_upgrade_cost = -0.15
+	global_ship_recruit_speed = -0.2
+	center_of_trade_upgrade_cost = -0.2
 	
 	ai_will_do = {
 		factor = 1.2
@@ -438,8 +437,8 @@ production_quota_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	embargo_efficiency = 0.33
-	production_efficiency = 0.1
+	blockade_efficiency = 0.2
+	galley_cost = -0.1
 
 	ai_will_do = {
 		factor = 0.7
@@ -462,8 +461,8 @@ trade_kontor_network = {
 		full_idea_group = trade_ideas
 	}
 	
-	merc_maintenance_modifier = -0.1
-	production_efficiency = 0.10
+	trade_range_modifier = 0.33
+	trade_efficiency = 0.1
 	
 	ai_will_do = {
 		factor = 0.6
@@ -506,8 +505,8 @@ policy_of_neutrality = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	mercenary_manpower = 0.25
-	possible_condottieri = 1	
+	free_leader_pool = 2
+	possible_condottieri = 1
 
 	ai_will_do = {
 		factor = 0.8
@@ -530,9 +529,8 @@ professional_diplomatic_corps = {
 		full_idea_group = quality_ideas
 	}
 	
-	special_unit_forcelimit = 0.1
-	army_tradition_decay = -0.01
-	capture_ship_chance = 0.2
+	special_unit_forcelimit = 0.05
+	naval_tradition_from_battle = 1
 
 	ai_will_do = {
 		factor = 0.7
@@ -555,9 +553,9 @@ colonial_companies_act = {
 		full_idea_group = exploration_ideas
 		full_idea_group = plutocracy_ideas
 	}
-	
-	colonists = 1
-	global_colonial_growth = 10
+
+	global_trade_goods_size_modifier = 0.05
+	global_colonial_growth = 30
 
 	ai_will_do = {
 		factor = 1
@@ -727,7 +725,7 @@ fortified_trading_posts = {
 		full_idea_group = trade_ideas
 	}	
 	
-	embargo_efficiency = 0.33
+	spy_offence = 0.5
 	movement_speed = 0.1
 	
 	ai_will_do = {
@@ -772,7 +770,7 @@ full_sovereignty_act = {
 		full_idea_group = influence_ideas
 	}	
 	
-	liberty_desire = -20
+	reduced_liberty_desire = 20
 	global_unrest = -2
 	
 	ai_will_do = {
@@ -862,8 +860,8 @@ overseas_embassies = {
 		full_idea_group = diplomatic_ideas
 	}	
 	
-	manpower_recovery_speed = 0.15
-	possible_condottieri = 4
+	interest_per_annum = -0.5
+	possible_condottieri = 3
 
 	
 	ai_will_do = {

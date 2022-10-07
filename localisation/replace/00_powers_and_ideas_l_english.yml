@@ -12,7 +12,7 @@
 
  ########## Trade into Land Trade #########
  
- trade_ideas:0 "Land Trade (**)"
+ trade_ideas:0 "Land Trade §YTra§!"
  trade_ideas_bonus:0 "Full Land Trade"
  merchant_adventures:0 "By Road, Track, or Trail."
  merchant_adventures_desc:0 "While other merchants waste time constructing costly boats and haggling over crew prices just to have them mutiny, we make headway with experienced and cunning caravaneers leading the way from market to market."
@@ -21,7 +21,7 @@
  
  ########## Naval into Sea Trade #########
  
- naval_ideas:0 "Ocean Trade (**)"
+ naval_ideas:0 "Ocean Trade §YTra§!"
  naval_ideas_bonus:0 "Full Ocean Trade"
  boat_1:0 "Shrewd Commerce Practice"
  boat_1_desc:0 "Allows us to make use of more refined trading practices giving our merchants the upper hand over our competitors."
@@ -32,29 +32,29 @@
  boat_4:0 "Boats are Better"
  boat_4_desc:0 "It's just a simple fact that boats are faster and more cost efficient than land-based caravans. What takes months for camels to cross we can do in half the time, or the same time with triple the load."
  boat_5:0 "By Wind, Wave, and Water"
- boat_5_desc: "Can you feel it? The wind in your hair, the sea spray on your face, the sun on your back, and the world in your hand! This is how trade should be done."
+ boat_5_desc:0 "Can you feel it? The wind in your hair, the sea spray on your face, the sun on your back, and the world in your hand! This is how trade should be done."
  boat_6:0 "Merchant Fleets"
  boat_6_desc:0 "The time has come to construct a massive merchant fleet. The more vessels we have afloat, the more profits we rake in, it's that simple."
  boat_7:0 "Armed Escorts"
  boat_7_desc:0 "Pirates and Privateers beware: Our fleets now come equipped with extra cannon and supply, just in case."
  
- ########## Divine Ideas ########
+ ########## Divine Ideas #########
  
  friends_in_high_places_desc:0 "Oh my God I Trust in Thee. Let me not be ashamed. Let not my enemies try to fool me. Amen."
  
  ########## Economic Ideas ##########
  
- economic_ideas:0 "Economic Ideas (*)"
+ economic_ideas:0 "Economic Ideas §GAdm§!"
  population_boom:0 "Population boom."
  population_boom_desc:0 "The increase of our industry and urbanisation has lead to a boom in our population. This has lead to more people to take up jobs producing in the fields and factories alike."
  
- ########## Humanist into Construction ##########
+ ########## Humanist into Health ##########
  
- humanist_ideas:0 "Construction Ideas (*)"
- humanist_ideas_bonus:0 "Full Construction"
+ humanist_ideas:0 "Governance Ideas §GAdm§!"
+ humanist_ideas_bonus:0 "Full Governance"
  advanced_tools:0 "Advanced Tools"
  advanced_tools_desc:0 "Better tools for our people mean greater yields of production."
- urbanization: "Urbanization"
+ urbanization:0 "Urbanization"
  urbanization_desc:0 "With more and more people flocking to our towns and cities, it has become easier necessary to focus on concentrated construction efforts."
  craftsmen_by_trade:0 "Craftsmen by trade"
  craftsmen_by_trade_desc:0 "Our craftsmen are true professionals, and seldom make mistakes."
@@ -70,8 +70,8 @@
  
  ########## Aristocratic into Academia ##########
  
- aristocracy_ideas:0 "Noble Academia Ideas"
- aristocracy_ideas_bonus:0 "Full Academia"
+ aristocracy_ideas:0 "Academy Ideas §RStrat§!"
+ aristocracy_ideas_bonus:0 "Full Academy"
  noble_knights:0 "Noble Knights"
  noble_knights_desc:0 "Supporting cavalry requires an economic system that produces a large number of surplus horses. If we were to guarantee the privileges of our noble class not only would they be much happier they would do much of the work to produce the needed horses. Our court fool described it as service guarantees serfs."
  noble_officers:0 "Noble Officers Academy"
@@ -89,11 +89,11 @@
  
  ########## Espionage into Strategic ##########
  
- spy_ideas:0 "Strategic Ideas"
- spy_ideas_bonus:0 "Full Strategic"
+ spy_ideas:0 "Campaign Ideas §RStrat§!"
+ spy_ideas_bonus:0 "Full Campaign"
  strat_shock:0 "Shock and Awe"
  strat_shock_desc:0 "Sometimes, the best way to beat an enemy is to break their will in one fell swoop. Enough firepower can achieve this, and has the added benefit of ensuring foes stay beaten."
- vetting:0 "Economic Warfare"
+ vetting:0 "Campaign Funds"
  vetting_desc:0 "Armies that can't afford to pay their soldiers are doomed. We should take this to heart, and perfect alternative methods of acquiring finances for the war machine."
  strat_foreign_contacts:0 "Foreign Contracts"
  strat_foreign_contacts_desc:0 "By hiring sympathetic foreign natives to provide scouting and mapping we are better able to manuever through foreign lands."
@@ -106,6 +106,8 @@
 
  ### Defensive ###
  
+ defensive_ideas:0 "Emplacement Tactics §OTac§!"
+ defensive_ideas_bonus:0 "Full Arty Doctrine"
  imp_unit_protect:0 "Military Armour"
  imp_unit_protect_desc:0 "Our armies are better protected than our foriegn counter-parts, a well defended army is an alive army."
  regimental_system:0 "Thick Skulls"
@@ -114,21 +116,26 @@
  battlefield_commisions_desc:0 "Cannon are the greatest siege weapons, without doubt. By incorporating them into our defenses and standard training our soldiers have mastered their battlefield use and turned our attackers greatest weapon against them." 
 
  ### Offensive ###
+ 
+ offensive_ideas:0 "Line Tactics §OTac§!"
+ offensive_ideas_bonus:0 "Full Inf Doctrine"
  tic_reserve_corps:0 "Reserve Corp"
  tic_reserve_corps_desc:0 "With a maintained reserve corp, we can quickly reinforce our frontlines with fresh troops."
  
  ### Quality ###
  
- quality_ideas:0 "Quality Ideas (***)"
+ quality_ideas:0 "Broadside Ideas §BNav§!"
+ quality_ideas_bonus:0 "Full Broadside"
  
  ### Quantity ###
  
- quantity_ideas:0 "Quantity Ideas (***)"
+ quantity_ideas:0 "Boarding Ideas §BNav§!"
+ quantity_ideas_bonus:0 "Full Boarding"
 
- ### Plutocracy to Revanchist ###
+ ### Plutocracy to Cavalry ###
 
- plutocracy_ideas:0 "Revanchist Ideas"
- plutocracy_ideas_bonus:0 "Full Revanchist"
+ plutocracy_ideas:0 "Charge Tactics §OTac§!"
+ plutocracy_ideas_bonus:0 "Full Charge"
  tradition_of_payment:0 "Professional Militias"
  tradition_of_payment_desc:0 "Desperate times lie ahead of our nation. We shall formalize our militias into more professional fighting forces. Having local governments subsidize procurement of arms will be a great first step."
  free_subjects:0 "Nationalist Service"
@@ -146,7 +153,7 @@
  
  ### Leadership ###
  
- administrative_ideas:0 "Leadership Ideas"
+ administrative_ideas:0 "Leadership Ideas §GAdm§!"
  administrative_ideas_bonus:0 "Full Leadership"
  leadership_1:0 "Promoting Good Leadership"
  leadership_1_desc:0 "The first step to perfecting the art of leading is getting leaders that take care of themselves and their politics."
@@ -183,6 +190,7 @@
 
  ### Diplomatic ###
  
+ diplomatic_ideas:0 "Diplomatic Ideas Dip"
  dip_honour:0 "Honourable State"
  dip_honour_desc:0 "Our state diplomacy has managed to construct an image of our nation in a very good light, our reputation leaves us as one of the few honourable nations in the world."
  diplomatic_corps:0 "Propoganda Corps"
@@ -192,7 +200,7 @@
  
  ### Influence into Imperial ###
  
- influence_ideas:0 "Imperial Ideas"
+ influence_ideas:0 "Imperial Ideas Dip"
  influence_ideas_bonus:0 "Full Imperial"
  integrated_elites:0 "Integrated Elites"
  integrated_elites_desc:0 "By efficiently integrating the local nobles of our subject realms we gain access to their martial traditions and commanding expertise."
@@ -226,6 +234,25 @@
  aggressive_merchants_desc:0 "Just as our government and military are pushing the boundaries of civilization, so too will our merchants. Great wealth exists to be exploited by those daring enough to take the first steps into the unknown, and sieze it for themselves!"
  ex_reach:0 "Extend Our Reach"
  ex_reach_desc:0 "Expansionism is something that should be encouraged, not condoned. The government will make clears it's intentions and the legal and moral framework supporting those intentions."
+ 
+ ######## Mercenary Ideas #######
+ 
+ mercenary_ideas:0 "Mercenary Ideas"
+ mercenary_ideas_bonus:0 "Full Mercenary"
+ mercenary_1:0 "Supply Raids"
+ mercenary_1_desc:0 "Why waste our own money while at war? By raiding foreign territory we can avert damage to our economy."
+ mercenary_2:0 "Economic War"
+ mercenary_2_desc:0 "The success of relying on raids to supply our troops has led to the expansion of raiding to an entire form of warfare - we will strip our enemy's land bare of anything useful and leave them with ruin."
+ mercenary_3:0 "Attracting Mercenaries"
+ mercenary_3_desc:0 "Our policy of completely despoiling and looting occupied lands has proven quite favorable to the recruitment of mercenary companies, many of whom are willing to take less favorable contracts to edge out the competition, as they can make up the profits while on campaign."
+ mercenary_4:0 "Not Our Troops"
+ mercenary_4_desc:0 "The rising tradition of using mercenary soldiers in our land has had the happy side effect of our peasents being much less reluctant to go to war. After all, it's not their sons dying!"
+ mercenary_5:0 "Manpower Dividends"
+ mercenary_5_desc:0 "Recently we have seen an unexpected but altogether welcome increase in productive. Letting our peasents stay at home and work, instead of drafting them to war, has proven a stroke of genius for our nation's economic output!"
+ mercenary_6:0 "Government Controls"
+ mercenary_6_desc:0 "Inflation from the influx of siezed foreign goods to our nation is a good problem to have, but a problem nonetheless. Thankfully, we have much experiene in this matter, and with sufficient government controls regulation post-war economy we can mitigate the fortunate downsides of victory."
+ mercenary_7:0 "Economic Crusaders"
+ mercenary_7_desc: "The Venetian Crusaders sacked Constantinople in 1204. Their well disciplined troops use strategems of war clearly far ahead of their time. It is time we adopt these pioneering tactics for ourselves."
  
  ###############################################
  # Policies

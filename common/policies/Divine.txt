@@ -52,7 +52,7 @@ maritime_scribes = {
 		full_idea_group = maritime_ideas
 	}
 	
-	prestige_from_land = 0.5
+	prestige_from_land_battles = 0.5
 	manpower_in_true_faith_provinces = 0.2
 
 	ai_will_do = {

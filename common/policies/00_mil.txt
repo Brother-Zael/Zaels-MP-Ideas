@@ -16,8 +16,8 @@ the_foreign_support_act = {
 		full_idea_group = economic_ideas
 	}
 
-	artillery_cost = -0.2
-	army_tradition_decay = -0.01
+	global_manpower = 0.25
+	sailors_recovery_speed = 0.5
 	
 	ai_will_do = {
 		factor = 2
@@ -66,7 +66,7 @@ weapon_quality_standards = {
 		full_idea_group = quality_ideas
 	}
 	
-	artillery_power = 0.15
+	artillery_power = 0.1
 	heavy_ship_power = 0.1
 	
 	ai_will_do = {
@@ -78,7 +78,7 @@ weapon_quality_standards = {
 	}
 }
 
-the_tolerance_act = {
+the_tolerance_act = { # Lance of Righteousness Act
 	monarch_power = MIL
 
 	potential = {
@@ -96,7 +96,7 @@ the_tolerance_act = {
 	}
 
 	tolerance_heretic = 3
-	land_morale = 0.1
+	cavalry_power = 0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -136,8 +136,8 @@ foreign_conscription_centers = {
 		full_idea_group = offensive_ideas
 	}	
 	
-	cavalry_power = 0.15
-	manpower_recovery_speed = 0.1
+	infantry_cost = -0.1
+	manpower_recovery_speed = 0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -182,7 +182,7 @@ the_provincial_taxation_system = {
 	}
 	
 	num_accepted_cultures = 1
-	free_leader_pool = 2
+	allowed_marine_fraction = 0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -213,7 +213,7 @@ the_liquor_act = {
 		full_idea_group = administrative_ideas
 	}	
 	
-	land_morale = 0.1
+	naval_forcelimit_modifier = 0.1
 	sunk_ship_morale_hit_recieved = -0.1
 
 	ai_will_do = {
@@ -279,7 +279,7 @@ superior_supply_system = {
 		full_idea_group = exploration_ideas
 	}
 
-	manpower_recovery_speed = 0.1
+	flagship_morale = 0.3
 	naval_forcelimit_modifier = 0.1
 
 	ai_will_do = {
@@ -309,7 +309,7 @@ modern_siege_weapons = {
 	}
 
 	infantry_power = 0.1
-	leader_cost = -0.1
+	siege_ability = 0.1
 
 	ai_will_do = {
 		factor = 1
@@ -337,8 +337,8 @@ superior_fortification_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	fire_damage_received = -0.1
-	infantry_power = 0.1
+	artillery_damage_from_backrow = 0.2
+	artillery_bonus_vs_fort = 2
 
 
 	ai_will_do = {
@@ -363,7 +363,7 @@ modern_firearm_techniques = {
 		full_idea_group = quality_ideas
 	}
 	
-	fire_damage = 0.1
+	artillery_power = 0.1
 	leader_naval_fire = 1
 
 	ai_will_do = {
@@ -400,8 +400,8 @@ great_recovery_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	manpower_recovery_speed = 0.1
-	sailors_recovery_speed = 0.1
+	ship_capture_chance = 0.2
+	sailors_recovery_speed = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -426,7 +426,7 @@ military_zeal_act = {
 	}
 	
 	land_morale = 0.05
-	naval_morale = 0.05
+	recover_navy_morale_speed = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -454,8 +454,7 @@ field_priests = {
 		full_idea_group = quantity_ideas
 	}
 
-	land_forcelimit_modifier = 0.1
-	naval_forcelimit_modifier = 0.1
+	naval_morale = 0.15
 	
 	ai_will_do = {
 		factor = 1.2
@@ -482,8 +481,8 @@ pen_rely_on_sword_act = {
 		full_idea_group = quantity_ideas
 	}
 	
-	navy_tradition_decay -0.01
-	global_manpower = 15
+	allowed_marine_fraction = 0.1
+	ship_capture_chance = 0.3
 
 	
 	ai_will_do = {
@@ -529,7 +528,7 @@ diplomatic_defence_act = {
 
 	leader_siege = 1
 	ae_impact = -0.1
-	special_unit_forcelimit = 0.05
+	special_unit_forcelimit = 0.1
 	
 	ai_will_do = {
 		factor = 0.7
@@ -557,7 +556,7 @@ the_smite_act = {
 		full_idea_group = offensive_ideas
 	}
 
-	siege_ability = 0.1
+	leader_cost = -0.1
 	spy_offence = 0.5
 
 	ai_will_do = {
@@ -582,9 +581,8 @@ hired_adventurers_act = {
 		full_idea_group = exploration_ideas
 	}
 
-	global_sailors_modifier = 0.2
-	leader_land_manuever = 1
-
+	global_sailors_modifier = 0.5
+	leader_land_shock = 1 # Conquistadors
 
 	ai_will_do = {
 		factor = 1
@@ -612,8 +610,8 @@ interventionist_justification_act = {
 		full_idea_group = aristocracy_ideas
 	}	
 	
-	cavalry_power = 0.10
-	global_manpower = 20
+	monarch_diplomatic_power = 1
+	global_manpower = 10
 	
 	ai_will_do = {
 		factor = 1
@@ -705,7 +703,7 @@ inspirational_leaders = {
 		full_idea_group = quantity_ideas
 	}	
 	
-	build_cost = -0.2
+	global_ship_recruit_speed = -0.2
 	naval_forcelimit_modifier = 0.2
 
 	ai_will_do = {
@@ -734,7 +732,7 @@ the_preparation_act = {
 		full_idea_group = defensive_ideas
 	}	
 	
-	fort_maintenance_modifier = -0.33
+	land_atrittion = -0.2
 	fire_damage_received = -0.1
 	
 	ai_will_do = {
@@ -763,7 +761,7 @@ local_militias = {
 		full_idea_group = defensive_ideas
 	}	
 	
-	war_exhaustion = -0.05
+	war_exhaustion_cost = -0.33
 	defensiveness = 0.25
 	
 	ai_will_do = {
@@ -788,7 +786,7 @@ elite_regiments_act = {
 		full_idea_group = quantity_ideas
 	}	
 
-	mil_advisor_cost = -0.15
+	dip_advisor_cost = -0.25
 	admiral_cost = -0.2
 		
 	ai_will_do = {
@@ -813,7 +811,7 @@ light_cavalry_doctrine = {
 		full_idea_group = quality_ideas
 	}	
 	
-	shock_damage = 0.1
+	heavy_ship_cost = -0.1
 	galley_power = 0.1
 	
 	ai_will_do = {
@@ -858,8 +856,8 @@ danger_close_policy = {
 		full_idea_group = spy_ideas
 	}	
 	
-	backrow_artillery_damage = 0.1
-	artillery_cost = -0.1
+	manpower_recovery_speed = 0.2
+	land_atrittion = -0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -898,13 +896,76 @@ weaponize_church_zeal_act = {
 		full_idea_group = spy_ideas
 		full_idea_group = religious_ideas
 	}
-	
-	global_recruitment_speed = -0.2
-	land_forcelimit_modifier = 0.2
+
+	culture_conversion_cost = -0.33
+	global_tax_income = 48
 	
 	ai_will_do = {
 		factor = 0.3
 	}
+}
+
+edict_of_expulsion = { # Pillars of Salt Act
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = religious_ideas
+		OR = {
+			full_idea_group = defensive_ideas
+			full_idea_group = religious_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = religious_ideas
+	}
+
+	artillery_damage_from_backrow = 0.3
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}
+
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
+		}
+	}
+
 }
 
 innovative_warfare_philosophy = {
@@ -925,7 +986,7 @@ innovative_warfare_philosophy = {
 	}	
 	
 	innovativeness_gain = 0.5
-	cavalry_fire = 0.25
+	mil_tech_cost_modifier = -0.1
 	
 	
 	ai_will_do = {

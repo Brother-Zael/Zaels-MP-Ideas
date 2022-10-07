@@ -139,9 +139,9 @@ war_academy_nobles_act = {
 		full_idea_group = naval_ideas
 		full_idea_group = aristocracy_ideas
 	}
-	
-	light_ship_power = 0.25
-	leader_naval_fire = 1
+
+	leader_naval_manuever = 1
+	admiral_cost = -0.1
 	
 	ai_will_do = {
 		factor = 0.5
@@ -165,8 +165,8 @@ paid_commissions_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	global_ship_cost = -0.2
-	admiral_cost = -0.2
+	light_ship_cost = -0.2
+	light_ship_power = 0.3
 	
 	ai_will_do = {
 		factor = 0.6
@@ -236,7 +236,7 @@ southern_school_act = {
 		full_idea_group = offensive_ideas
 	}
 	
-	leader_naval_manuever = 1
+	leader_naval_fire = 1
 	global_ship_trade_power = 0.1
 	
 	ai_will_do = {
@@ -261,7 +261,7 @@ western_school_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	disengagement_chance = 0.1
+	global_naval_barrage_cost = -0.33
 	defensiveness = 0.2
 	
 	ai_will_do = {
@@ -286,7 +286,8 @@ northern_school_act = {
 		full_idea_group = quality_ideas
 	}
 	
-	naval_morale = 0.1
+	naval_morale = 0.05
+	recover_navy_morale_speed = 0.05
 	
 	ai_will_do = {
 		factor = 0.1
@@ -310,7 +311,7 @@ eastern_school_act = {
 		full_idea_group = quantity_ideas
 	}
 
-	naval_tradition_from_trade = 0.25
+	naval_forcelimit_modifier = 0.3
 	global_ship_recruit_speed = -0.25
 	
 	ai_will_do = {

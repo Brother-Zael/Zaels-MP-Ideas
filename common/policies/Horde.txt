@@ -59,7 +59,7 @@ calming_the_tides_policy = {
 	}
 	
 	cavalry_cost = -0.1
-	build_cost = -0.15
+	build_cost = -0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -214,7 +214,7 @@ the_best_defense_policy = {
 	}
 
 	cavalry_fire = 0.3
-	global_institution_spread = 0.1
+	global_institution_spread = 0.2
 	
 	ai_will_do = {
 		factor = 1.0

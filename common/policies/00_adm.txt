@@ -16,8 +16,8 @@ efficent_military_act = {
 		full_idea_group = economic_ideas
 	}
 	
-	cavalry_cost = -0.1
-	land_forcelimit = 20
+	army_tradition = 0.25
+	free_leader_pool = 1
 
 	ai_will_do = {
 		factor = 1			
@@ -41,8 +41,8 @@ agricultural_cultivations = {
 		full_idea_group = quantity_ideas
 	}		
 
-	global_regiment_cost = -0.1
-	global_ship_cost = -0.15
+	allowed_marine_fraction = 0.1
+	galley_cost = -0.1
 
 	ai_will_do = {
 		factor = 1
@@ -88,8 +88,8 @@ formalized_measures = {
 		full_idea_group = economic_ideas
 	}
 
-	mercenary_discipline = 0.05
-	merc_maintenance_modifier = -0.25
+	cavalry_cost = -0.1
+	reinforce_cost_modifier = -0.1
 
 	ai_will_do = {
 		factor = 0.9
@@ -114,8 +114,8 @@ public_welfare_act = {
 		full_idea_group = economic_ideas
 	}
 
-	interest = -1
-	inflation_action_cost = -0.5
+	fort_maintenance_modifier = -0.2
+	hostile_attrition = 1
 	
 	ai_will_do = {
 		factor = 0.4	
@@ -140,78 +140,13 @@ technological_pursuits_act = {
 		full_idea_group = spy_ideas
 	}
 
-	artillery_bonus_vs_fort = 2
-	innovativeness_gain = 0.25
+	war_exhaustion_cost = -0.33
+	innovativeness_gain = 0.5
 	
 	
 	ai_will_do = {
 		factor = 0.6
 	}
-}
-
-edict_of_expulsion = {
-	monarch_power = ADM
-
-
-	potential = {
-		has_idea_group = defensive_ideas
-		has_idea_group = religious_ideas
-		OR = {
-			full_idea_group = defensive_ideas
-			full_idea_group = religious_ideas
-		}
-	}
-	
-	allow = {
-		full_idea_group = defensive_ideas
-		full_idea_group = religious_ideas
-	}
-
-
-	culture_conversion_cost = -0.33
-	global_tax_income = 36
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			religious_unity = 1
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { religious_unity = 0.8 }
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { religious_unity = 0.6 }
-		}			
-		modifier = {
-			factor = 1.5
-			NOT = { religious_unity = 0.4 }
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { religious_unity = 0.2 }
-		}
-
-		modifier = {
-			factor = 1.5
-			average_effective_unrest = 2
-		}
-		modifier = {
-			factor = 1.5
-			average_effective_unrest = 4
-		}			
-		modifier = {
-			factor = 1.5
-			average_effective_unrest = 6
-		}
-		modifier = {
-			factor = 1.5
-			average_effective_unrest = 8
-		}
-	}
-
 }
 
 the_spy_discovery_act = {
@@ -233,8 +168,7 @@ the_spy_discovery_act = {
 	}
 
 	defensiveness = 0.15
-	global_spy_defence = 0.33
-	yearly_corruption = -0.05
+	land_morale = 0.05
 
 	ai_will_do = {
 		factor = 0.6
@@ -258,8 +192,7 @@ free_company_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	leader_land_shock = 1
-	free_leader_pool = 1
+	infantry_power = 0.1
 
 	ai_will_do = {
 		factor = 1
@@ -404,7 +337,7 @@ the_witchcraft_act = {
 	}
 	
 	global_autonomy = -0.05
-	culture_conversion_cost = -0.2
+	missionaries = 1
 
 	ai_will_do = {
 		factor = 1
@@ -466,8 +399,7 @@ the_education_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	advisor_cost = -0.1
-	global_prosperity_growth = 0.05
+	reinforce_cost_modifier = -0.33
 
 	ai_will_do = {
 		factor = 0.8
@@ -585,9 +517,9 @@ cultural_recognition_act = {
 		full_idea_group = plutocracy_ideas
 	}	
 
-	merc_maintenance_modifier = -0.1
-	land_forcelimit_modifier = 0.1
-	
+	production_efficiency = 0.1
+	build_time = -0.1
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -678,9 +610,8 @@ diplomatic_cooperation_act = {
 		full_idea_group = diplomatic_ideas
 	}
 
-	technology_cost = -0.05
-	global_institution_spread = 0.1
-	embracement_cost = -0.1
+	technology_cost = -0.1
+	embracement_cost = -0.2
 
 
 	ai_will_do = {
@@ -706,7 +637,7 @@ the_banking_system = {
 		full_idea_group = trade_ideas
 	}
 
-	production_efficiency = 0.15
+	production_efficiency = 0.1
 	global_prosperity_growth = 0.05
 
 
@@ -748,9 +679,8 @@ multilingual_diplomats = {
 		full_idea_group = humanist_ideas
 		full_idea_group = diplomatic_ideas
 	}	
-	
-	state_maintenance_modifier = -0.1
-	improve_relation_modifier = 0.25
+
+	global_unrest = -6
 	
 	ai_will_do = {
 		factor = 1
@@ -782,7 +712,7 @@ the_foreign_aid_act = {
 	}
 }
 
-anti_heresy_act = {
+anti_heresy_act = { # Wrath of God Act
 	monarch_power = ADM
 	
 	potential = {
@@ -799,8 +729,8 @@ anti_heresy_act = {
 		full_idea_group = offensive_ideas
 	}
 	
-	recover_army_morale_speed = 0.1
-	global_heretic_missionary_strength = 0.03
+	recover_army_morale_speed = 0.25
+	land_forcelimit_modifier = 0.1
 
 	ai_will_do = {
 		factor = 1
@@ -840,8 +770,8 @@ intergrated_communites_act = {
 		}
 	}
 	
-	global_autonomy = -0.05
-	global_tax_modifier = 0.2
+	interest = -0.5
+	inflation_reduction = 0.05
 	
 	allow = {
 		full_idea_group = diplomatic_ideas
@@ -913,8 +843,8 @@ industrial_transport = {
 		full_idea_group = quality_ideas
 	}	
 	
-	ship_durability = 0.1
-	build_time = -0.25
+	ship_durability = 0.05
+	sailor_recovery_speed = 0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -957,9 +887,9 @@ industrial_war_wagons = {
 		full_idea_group = humanist_ideas
 		full_idea_group = offensive_ideas
 	}	
-	
-	movement_speed = 0.05
-	reinforce_cost_modifier = -0.15
+
+	reinforce_speed = 0.1
+	manpower_recovery_speed = 0.1
 	
 	
 	ai_will_do = {
@@ -1004,8 +934,8 @@ industrial_cavalry_raiders = {
 		full_idea_group = aristocracy_ideas
 	}	
 
-	cavalry_cost = -0.2
-	loot_amount = 0.33
+	army_tradition_decay = -0.01
+	monarch_lifespan = 5
 	
 	ai_will_do = {
 		factor = 1
@@ -1085,7 +1015,7 @@ vassal_integration_act = {
 		full_idea_group = administrative_ideas
 	}	
 
-	monarch_diplomatic_power = 1
+	country_diplpomatic_power = 1
 	prestige_decay = -0.01
 	
 	ai_will_do = {
@@ -1131,9 +1061,8 @@ military_officer_excellence_act = {
 		full_idea_group = aristocracy_ideas
 	}
 
-	monarch_military_power = 1
-	leader_land_fire = 2
-	leader_naval_fire = 2
+	drill_gain_modifier = 0.5
+	free_mil_policy = 1
 
 	ai_will_do = {
 		factor = 0.8
