@@ -65,7 +65,8 @@
  industry_expansion:0 "Industry Expansion"
  industry_expansion_desc:0 "Aiding the expansion of industry within our realm will prove to benefit us greatly."
  imp_admin_overwatch:0 "Administrative Overwatch"
- imp_admin_overwatch_desc:0 "We employ many astute bureaucrats in our national-industrial complex. If they can run such large companies they surely can help run our government too!"
+ imp_admin_overwatch_desc:0 "We employ many astute bureaucrats in our national-industrial complex. If they can run such large companies they surely can help run our government too!\n\n§YUnlocks feature§!:\n§GDecennial Censuses§!: Gain the ability to carry out a census every §Y10§! years, increasing §Yrevenue§! and §Ymanpower§!.\nAlso gain the following permanent, nation-wide modifiers:"
+ 
  
  
  ########## Aristocratic into Academia ##########
