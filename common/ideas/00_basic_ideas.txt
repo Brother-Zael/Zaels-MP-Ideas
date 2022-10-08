@@ -669,7 +669,6 @@ humanist_ideas = {
 
 	imp_admin_overwatch = {
 		governing_capacity_modifier = 0.1
-		# replace with population_census
  	}
 
 	ai_will_do = {
