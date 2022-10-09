@@ -8,21 +8,21 @@ spriteTypes = {
     }
 	spriteType = {
 		name = "GFX_idea_prestige_ideas"
-		texturefile = "gfx//interface//ideas//idea_maritime_ideas.dds"
+		texturefile = "gfx//interface//ideas//idea_prestige_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_idea_campaign_ideas"
-		texturefile = "gfx//interface//ideas//idea_plutocracy_ideas.dds"
+		texturefile = "gfx//interface//ideas//idea_campaign_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_idea_charge_ideas"
-		texturefile = "gfx//interface//ideas//idea_defensive_ideas.dds"
+		texturefile = "gfx//interface//ideas//idea_charge_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -37,6 +37,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_boarding_ideas"
 		texturefile = "gfx//interface//ideas//idea_quantity_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_mercenary_ideas"
+		texturefile = "gfx//interface//ideas//idea_mercenary_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"

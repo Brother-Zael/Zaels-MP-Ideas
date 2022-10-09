@@ -21,8 +21,8 @@
  
  ########## Naval into Sea Trade #########
  
- prestige_ideas:0 "Ocean Trade §YTra§!"
- prestige_ideas_bonus:0 "Full Ocean Trade"
+ naval_ideas:0 "Ocean Trade §YTra§!"
+ naval_ideas_bonus:0 "Full Ocean Trade"
  boat_1:0 "Shrewd Commerce Practice"
  boat_1_desc:0 "Allows us to make use of more refined trading practices giving our merchants the upper hand over our competitors."
  boat_2:0 "Mercantmen"
@@ -172,10 +172,10 @@
  leadership_7_desc:0 "All the investments we've placed into cultivation the leadership of our nation has begun to show it's value. It's very valuable."
 
  ### Prestige ###
- maritime_ideas:0 "Prestige Ideas"
- maritime_ideas_bonus:0 "Full Prestige"
+ prestige_ideas:0 "Prestige Ideas"
+ prestige_ideas_bonus:0 "Full Prestige"
  prestige_1:0 "Glorious Realm"
- prestige_1_desc:0 "Truly ours is the most glorious, most worthy, most impressive    realm that has ever been."
+ prestige_1_desc:0 "Truly ours is the most glorious, most worthy, most impressive realm that has ever been."
  prestige_2:0 "Manifest Destiny"
  prestige_2_desc:0 "Surely our neighbors stand in awe of our glorious realm and captivating people. Do not fret, they shall be included soon."
  prestige_3:0 "Media Campaigns"
