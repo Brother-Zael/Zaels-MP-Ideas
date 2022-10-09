@@ -18,7 +18,7 @@ aristocracy_ideas = {
 	
 	trigger = {
 		NOT = {
-			has_idea_group = spy_ideas
+			has_idea_group = campaign_ideas
 		}
 	}
 	
@@ -245,7 +245,7 @@ horde_gov_ideas = {
 	trigger = {
 		has_reform = steppe_horde
 		NOT = {
-			has_idea_group = plutocracy_ideas
+			has_idea_group = charge_ideas
 			has_idea_group = theocracy_gov_ideas
 			has_idea_group = defensive_ideas
 			has_idea_group = offensive_ideas
@@ -298,7 +298,7 @@ theocracy_gov_ideas = {
 			has_reform = feudal_theocracy
 		}
 		NOT = {
-			has_idea_group = plutocracy_ideas
+			has_idea_group = charge_ideas
 			has_idea_group = horde_gov_ideas
 			has_idea_group = defensive_ideas
 			has_idea_group = offensive_ideas
@@ -350,7 +350,7 @@ defensive_ideas = {
 	
 	trigger = {
 		NOT = {
-			has_idea_group = plutocracy_ideas
+			has_idea_group = charge_ideas
 			has_idea_group = horde_gov_ideas
 			has_idea_group = theocracy_gov_ideas
 			has_idea_group = offensive_ideas
@@ -437,7 +437,7 @@ offensive_ideas = {
 	trigger = {
 		NOT = {
 			government = theocracy
-			has_idea_group = plutocracy_ideas
+			has_idea_group = charge_ideas
 			has_idea_group = horde_gov_ideas
 			has_idea_group = theocracy_gov_ideas
 			has_idea_group = defensive_ideas
