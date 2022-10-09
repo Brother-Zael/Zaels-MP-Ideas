@@ -471,7 +471,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 	}
 	
 	mean_time_to_happen = {
@@ -497,7 +497,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 	}	
 
 	mean_time_to_happen = {
@@ -520,7 +520,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 	}
 	
 	immediate = {
@@ -596,7 +596,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		any_owned_province = {
 			NOT = { culture = ROOT }
 			is_city = yes
@@ -642,7 +642,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		any_owned_province = {
 			culture = ROOT
 			NOT = { religion = ROOT }
@@ -676,7 +676,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_idea_group = plutocracy_ideas	
+		has_idea_group = charge_ideas	
 	}		
 
 	mean_time_to_happen = {
@@ -699,7 +699,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas	
+		has_idea_group = charge_ideas	
 	}		
 
 	mean_time_to_happen = {
@@ -722,7 +722,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas	
+		has_idea_group = charge_ideas	
 	}		
 	
 	mean_time_to_happen = {
@@ -765,7 +765,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas	
+		has_idea_group = charge_ideas	
 		NOT = {	has_country_modifier =  "happy_people" }
 
 	}
@@ -794,7 +794,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		NOT = {	has_country_modifier =  "serfdom_modifier" }
 		NOT = {	has_country_modifier =  "freesubjects_modifier" }
 	}
@@ -846,7 +846,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas	
+		has_idea_group = charge_ideas	
 	}
 
 	mean_time_to_happen = {
@@ -886,7 +886,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		NOT = {	has_country_modifier =  "aristocracy_modifier" }
 	}
 
@@ -915,7 +915,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas	
+		has_idea_group = charge_ideas	
 		NOT = {	has_country_modifier =  "mercenaries_to_the_standard" }
 	}
 
@@ -940,7 +940,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		NOT = {	has_country_modifier =  "our_rights" }
 	}
 
@@ -964,7 +964,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		NOT = { mercantilism = 95 }
 
 	}
@@ -987,7 +987,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		NOT = {	has_country_modifier =  "agricultural_boom" }
 	}
 
@@ -1010,7 +1010,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		is_at_war = yes
 		NOT = {	has_country_modifier =  "to_the_colours" }
 	}
@@ -2201,7 +2201,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 		NOT = { has_country_modifier = enhanced_spies }
 		NOT = { has_country_modifier = spy_defections }
 	}
@@ -2229,7 +2229,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 		NOT = { has_country_modifier = enhanced_spies }
 		NOT = { has_country_modifier = spy_defections }
 	}
@@ -2263,7 +2263,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 		is_at_war = yes
 		any_rival_country = {
 			war_with = root
@@ -2297,7 +2297,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 		NOT = {	has_country_modifier =  "hidden_agents" }
 	}
 
@@ -2324,7 +2324,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 		NOT = {	has_country_modifier =  "better_rebel_support" }
 	}
 	
@@ -2349,7 +2349,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 	}
 
 	is_triggered_only = yes
@@ -2403,7 +2403,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 		government = monarchy
 		is_lesser_in_union = no
 		has_heir = no
@@ -2447,7 +2447,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 		NOT = {	has_country_modifier =  "focus_on_covert_actions" }
 	}
 	
@@ -2474,7 +2474,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = spy_ideas
+		has_idea_group = mercenary_ideas
 	}
 
 	mean_time_to_happen = {
@@ -2509,7 +2509,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		NOT = {	has_country_modifier =  "cabinet_dynamism" }
 	}
 
@@ -2536,7 +2539,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		NOT = {	has_country_modifier =  "government_corruption" }
 	}
 
@@ -2567,7 +2573,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		is_at_war = no
 		any_neighbor_country = {
 			is_at_war = no
@@ -2600,7 +2609,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		NOT = {	has_country_modifier =  "incompetent_fabrication" }
 	}
 
@@ -2632,7 +2644,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		NOT = {	has_country_modifier =  "brilliant_diplomat" }
 	}
 
@@ -2688,7 +2703,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		any_neighbor_country = {
 			religion = root
 			NOT = {
@@ -2724,7 +2742,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		NOT = {	has_country_modifier =  "improved_dip_reputation" }
 		NOT = {	has_country_modifier =  "reduced_dip_reputation" }
 	}
@@ -2752,7 +2773,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		NOT = {	has_country_modifier =  "improved_dip_reputation" }
 		NOT = {	has_country_modifier =  "reduced_dip_reputation" }
 	}
@@ -2780,7 +2804,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = diplomatic_ideas
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 		NOT = {	has_country_modifier =  "dip_jusitified_demands" }
 	}
 	
@@ -4104,7 +4131,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		NOT = { has_country_modifier = "EVTOPTA6100" }
 		NOT = { has_country_modifier = "EVTOPTA6101" }
@@ -4135,7 +4166,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		NOT = { has_country_modifier = "EVTOPTA6100" }
 		NOT = { has_country_modifier = "EVTOPTA6101" }
 		primitives = no
@@ -4169,7 +4204,11 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 	}
 	
@@ -4204,7 +4243,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 	}
 
@@ -4254,7 +4297,11 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		NOT = { has_country_modifier = "naval_developments" }
 		NOT = { has_country_modifier = "naval_hubris" }
@@ -4285,7 +4332,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		has_country_modifier = "naval_developments" 
 		NOT = { has_country_modifier = "naval_hubris" }
@@ -4319,7 +4370,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		NOT = { has_country_modifier = "blockade_tactics" }
 		NOT = { has_country_modifier = "slipping_standards" }
@@ -4348,7 +4403,11 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		NOT = { has_country_modifier = "blockade_tactics" }
 		NOT = { has_country_modifier = "slipping_standards" }
@@ -4381,7 +4440,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		NOT = { has_country_modifier = "naval_technical_developments" }
 		NOT = { has_country_modifier = "concerned_shipwrights" }
@@ -4410,7 +4473,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		NOT = { has_country_modifier = "naval_technical_developments" }
 		NOT = { has_country_modifier = "concerned_shipwrights" }
@@ -4443,7 +4510,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 	}
 
@@ -4467,7 +4538,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 	}
 
@@ -4495,7 +4570,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 	}
 	
@@ -4519,7 +4598,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 	}
 	
@@ -4584,7 +4667,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		num_of_heavy_ship = 1
 	}
 
@@ -4609,7 +4696,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = maritime_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+			has_idea_group = naval_ideas
+		}
 		primitives = no
 		NOT = { has_country_modifier = "naval_focus" }
 		NOT = { has_country_modifier = "land_modifier" }
@@ -6963,7 +7054,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = naval_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+		}
 		NOT = { has_country_modifier = "galley_veterans" }
 		NOT = { has_country_modifier = "heavy_ship_veterans" }
 	}
@@ -6999,7 +7093,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = naval_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+		}
 		any_owned_province = { has_port = yes }
 	}
 
@@ -7057,7 +7154,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = naval_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+		}
 	}
 
 	mean_time_to_happen = {
@@ -7118,7 +7218,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = naval_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+		}
 	}
 
 	mean_time_to_happen = {
@@ -7141,7 +7244,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = naval_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+		}
 	}
 
 	mean_time_to_happen = {
@@ -7175,7 +7281,10 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = naval_ideas
+		OR = {
+			has_idea_group = broadside_ideas
+			has_idea_group = boarding_ideas
+		}
 		any_owned_province = {
 			has_port = yes
 			NOT = { has_province_modifier = shipyard_fire }
