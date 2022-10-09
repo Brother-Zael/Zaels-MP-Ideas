@@ -21,8 +21,8 @@
  
  ########## Naval into Sea Trade #########
  
- naval_ideas:0 "Ocean Trade §YTra§!"
- naval_ideas_bonus:0 "Full Ocean Trade"
+ prestige_ideas:0 "Ocean Trade §YTra§!"
+ prestige_ideas_bonus:0 "Full Ocean Trade"
  boat_1:0 "Shrewd Commerce Practice"
  boat_1_desc:0 "Allows us to make use of more refined trading practices giving our merchants the upper hand over our competitors."
  boat_2:0 "Mercantmen"
@@ -90,8 +90,8 @@
  
  ########## Espionage into Strategic ##########
  
- spy_ideas:0 "Campaign Ideas §RStrat§!"
- spy_ideas_bonus:0 "Full Campaign"
+ campaign_ideas:0 "Campaign Ideas §RStrat§!"
+ campaign_ideas_bonus:0 "Full Campaign"
  strat_shock:0 "Shock and Awe"
  strat_shock_desc:0 "Sometimes, the best way to beat an enemy is to break their will in one fell swoop. Enough firepower can achieve this, and has the added benefit of ensuring foes stay beaten."
  vetting:0 "Campaign Funds"
@@ -125,18 +125,18 @@
  
  ### Quality ###
  
- quality_ideas:0 "Broadside Ideas §BNav§!"
- quality_ideas_bonus:0 "Full Broadside"
+ broadside_ideas:0 "Broadside Ideas §BNav§!"
+ broadside_ideas_bonus:0 "Full Broadside"
  
  ### Quantity ###
  
- quantity_ideas:0 "Boarding Ideas §BNav§!"
- quantity_ideas_bonus:0 "Full Boarding"
+ boarding_ideas:0 "Boarding Ideas §BNav§!"
+ boarding_ideas_bonus:0 "Full Boarding"
 
  ### Plutocracy to Cavalry ###
 
- plutocracy_ideas:0 "Charge Tactics §OTac§!"
- plutocracy_ideas_bonus:0 "Full Charge"
+ charge_ideas:0 "Charge Tactics §OTac§!"
+ charge_ideas_bonus:0 "Full Charge"
  tradition_of_payment:0 "Professional Militias"
  tradition_of_payment_desc:0 "Desperate times lie ahead of our nation. We shall formalize our militias into more professional fighting forces. Having local governments subsidize procurement of arms will be a great first step."
  free_subjects:0 "Nationalist Service"

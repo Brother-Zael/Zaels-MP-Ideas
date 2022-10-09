@@ -8,6 +8,7 @@
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
 aristocracy_ideas = {
+	#academy
 	category = MIL
 
 	bonus = {
@@ -56,10 +57,33 @@ aristocracy_ideas = {
 
 	ai_will_do = {
 		factor = 0.5
+		modifier = {
+			factor = 0.2
+			estate_influence = {
+				estate = estate_nobles
+				NOT = { influence = 30 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			estate_influence = {
+				estate = estate_nobles
+				influence = 60
+			}
+		}
+		modifier = {
+			factor = 1.25
+			army_tradition = 50
+		}
+		modifier = {
+			factor = 1.5
+			army_tradition = 75
+		}
 	}
 }
 
-spy_ideas = {
+campaign_ideas = {
+	#campaign
 	category = MIL
 
 	trigger = {
@@ -109,10 +133,27 @@ spy_ideas = {
 
 	ai_will_do = {
 		factor = 0.5
+		modifier = {
+			factor = 0.8
+			NOT = { land_forcelimit = 20 }
+		}
+		modifier = {
+			factor = 1.25
+			land_forcelimit = 30
+		}
+		modifier = {
+			factor = 1.5
+			land_forcelimit = 60
+		}
+		modifier = {
+			factor = 1.5
+			land_forcelimit = 80
+		}
 	}
 }
 
-plutocracy_ideas = {
+charge_ideas = {
+	#charge
 	category = MIL
 
 	bonus = {
@@ -154,6 +195,38 @@ plutocracy_ideas = {
 	}
 	ai_will_do = {
 		factor = 0.4
+		modifier = {
+			factor = 1.2
+			cavalry_fraction = 0.33
+		}
+		modifier = {
+			factor = 2
+			cavalry_fraction = 0.5
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.3
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = shock_damage 
+				value = 0.2
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = shock_damage_received 
+				value = 0.2
+				extra_shortcut = yes
+			}
+		}
 	}
 }
 
@@ -267,6 +340,7 @@ theocracy_gov_ideas = {
 }
 
 defensive_ideas = {
+	#emplacement
 	category = MIL
 
 	bonus = {
@@ -316,10 +390,43 @@ defensive_ideas = {
 
 	ai_will_do = {
 		factor = 0.77
+		modifier = {
+			factor = 1.2
+			artillery_fraction = 0.2
+		}
+		modifier = {
+			factor = 2
+			artillery_fraction = 0.33
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = artillery_power
+				value = 0.3
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = fire_damage 
+				value = 0.2
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = fire_damage_received 
+				value = 0.2
+				extra_shortcut = yes
+			}
+		}
 	}
 }
 
 offensive_ideas = {
+	#line
 	category = MIL
 
 	bonus = {
@@ -362,10 +469,35 @@ offensive_ideas = {
 
 	ai_will_do = {
 		factor = 0.94
+		modifier = {
+			factor = 1.2
+			infantry_fraction = 0.8
+		}
+		modifier = {
+			factor = 2
+			NOT = { cavalry_fraction = 0.1 }
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = infantry_power
+				value = 0.2
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 0.8
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.15
+				extra_shortcut = yes
+			}
+		}
 	}
 }
-
-quality_ideas = {
+	
+broadside_ideas = {
+	#broadside
 	category = MIL
 
 	trigger = {
@@ -407,11 +539,41 @@ quality_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.49
+		factor = 0.5
+		
+		modifier = {
+			factor = 0
+			NOT = { num_of_total_ports = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = heavy_ship_power
+				value = 0.1
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 0.8
+			has_global_modifier_value = {
+				which = galley_power
+				value = 0.1
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			heavy_ship_fraction = 0.2
+		}
+		modifier = {
+			factor = 0.8
+			galley_fraction = 0.33		
+		}
 	}
 }
 
-quantity_ideas = {
+boarding_ideas = {
+	#boarding
 	category = MIL
 
 	trigger = {
@@ -455,7 +617,36 @@ quantity_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 1.0
+		factor = 0.5
+		
+		modifier = {
+			factor = 0
+			NOT = { num_of_total_ports = 1 }
+		}
+		modifier = {
+			factor = 0.8
+			has_global_modifier_value = {
+				which = heavy_ship_power
+				value = 0.1
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = galley_power
+				value = 0.1
+				extra_shortcut = yes
+			}
+		}
+		modifier = {
+			factor = 0.8
+			heavy_ship_fraction = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			galley_fraction = 0.33		
+		}
 	}
 }
 
@@ -506,6 +697,31 @@ innovativeness_ideas = {
 			factor = 2
 			num_of_cities = 50
 		}
+		modifier = {
+			factor = 2
+			num_of_cities = 50
+		}
+		modifier = {
+			factor = 1.5
+			innovativeness = 25
+		}
+		modifier = {
+			factor = 1.5
+			innovativeness = 50
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = free_thinker_personality
+		}
+		modifier = {
+			# separate, because those aren't mutually exclusive
+			factor = 1.33
+			ruler_has_personality = scholar_personality
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = reformist_personality
+		}
 	}
 }
 
@@ -539,7 +755,7 @@ religious_ideas = {
 		church_power_modifier = 0.1
 		imperial_mandate = 0.2
 		yearly_harmony = 1
-		monthly_piety = 0.001
+		monthly_piety_accelerator = 0.001
 		monthly_karma = 0.1
 		yearly_patriarch_authority = 0.01
 	}
@@ -555,8 +771,42 @@ religious_ideas = {
 	ai_will_do = {
 		factor = 0.5
 		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
 			factor = 4
-			government_type = theocracy
+			government = theocracy
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = pious_personality
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = zealot_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = sinner_personality
+		}
+		modifier = {
+			factor = 2
+			#has provinces with wrong religion, but not overwhelmingly so
+			AND = {
+				religious_unity = 51
+				NOT = { religious_unity = 85 }
+			}
+		}
+		modifier = {
+			factor = 0.25
+			OR = {
+				religion = confucianism	
+				religion = buddhism
+				religion = mahayana
+				religion = vajrayana
+				religion = hinduism
+			}
 		}
 	}
 }
@@ -609,8 +859,38 @@ economic_ideas = {
 			inflation = 5
 		}
 		modifier = {
+			factor = 1.33
+			ruler_has_personality = industrious_personality
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = entrepreneur_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = embezzler_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = greedy_personality
+		}
+		modifier = {
 			factor = 1.5
 			inflation = 10
+		}
+		modifier = {
+			factor = 1.5
+			AND = {
+				average_autonomy = 10
+				num_of_cities = 10
+			}
+		}
+		modifier = {
+			factor = 1.33
+			AND = {
+				num_of_loans = 20
+				NOT = { ruler_has_personality = embezzler_personality }
+			}
 		}
 		modifier = {
 			factor = 2
@@ -620,14 +900,11 @@ economic_ideas = {
 			factor = 1.3
 			num_of_cities = 20
 		}
-		modifier = {
-			factor = 1.3
-			num_of_cities = 50
-		}
 	}
 }
 
 humanist_ideas = {
+	#Governance
 	category = ADM
 
 	trigger = {
@@ -673,10 +950,49 @@ humanist_ideas = {
 
 	ai_will_do = {
 		factor = 0.9
+		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
+			factor = 2
+			AND = {
+				NOT = { religious_unity = 50 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			government = theocracy
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = pious_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = zealot_personality
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = tolerant_personality
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = lawgiver_personality
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 50
+		}
 	}
 }
 
 administrative_ideas = {
+	#Leadership
 	category = ADM
 
 	trigger = {
@@ -725,6 +1041,34 @@ administrative_ideas = {
 
 	ai_will_do = {
 		factor = 0.75
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = well_advised_personality
+		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = lawgiver_personality
+		}
+		modifier = {
+			factor = 10
+			AND = {
+				adm = 5
+				dip = 5
+				mil = 5
+			}
+		}
+		modifier = {
+			factor = 0.2
+			AND = {
+				NOT = { adm = 3 }
+				NOT = { dip = 3 }
+				NOT = { mil = 3 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			government = has_harem
+		}
 	}
 }
 
@@ -838,6 +1182,22 @@ jurisprudence_ideas = {
 			factor = 10
 			religion = confucianism
 		}
+		modifier = {
+			factor = 1.33
+			ruler_has_personality = tolerant_personality
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.5
+			num_of_cities = 50
+		}
+		modifier = {
+			factor = 1.5
+			is_great_power = yes
+		}
 	}
 }
 
@@ -891,15 +1251,24 @@ diplomatic_ideas = {
 		modifier = {
 			factor = 2
 			is_emperor = yes
+		}	
+		modifier = {
+			factor = 2
+			is_elector = yes 
 		}
 		modifier = {
-			factor = 1.5
-			vassal = 2
+			factor = 1.33
+			ruler_has_personality = silver_tongue_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = babbling_buffoon_personality
 		}
 	}
 }
 
 influence_ideas = {
+	# imperial
 	category = DIP
 
 	bonus = {
@@ -946,11 +1315,24 @@ influence_ideas = {
 			factor = 6
 			is_emperor = yes
 		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 3
+			num_of_subjects = 4
+		}
+		modifier = {
+			factor = 1.2
+			is_great_power = yes
+		}
 	}
 }
 
 
 trade_ideas = {
+	#land trade
 	category = DIP
 
 	bonus = {
@@ -996,16 +1378,37 @@ trade_ideas = {
 		modifier = {
 			factor = 3
 			OR = {
-				has_government_reform = oligarchy_reform
-				has_government_reform = veche_republic
-				has_government_reform = free_city
-				has_government_reform = cossacks_reform
+				has_reform = oligarchy_reform
+				has_reform = veche_republic
+				has_reform = free_city
+				has_reform = cossacks_reform
 			}
+		}
+		modifier = {
+			factor = 0.75
+			num_of_trade_companies = 1
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.33
+		}
+		modifier = {
+			factor = 3
+			trade_income_percentage = 0.66
+		}
+		modifier = {
+			factor = 0.5
+			num_of_total_ports = 15
+		}
+		modifier = {
+			factor = 0.1
+			has_idea_group = exploration_ideas
 		}
 	}
 }
 
 naval_ideas = {
+	#ocean trade
 	category = DIP
 
 	bonus = {
@@ -1049,37 +1452,55 @@ naval_ideas = {
 		sea_repair = yes
 	}
 
-    ai_will_do = {
+	ai_will_do = {
         factor = 0.45
 		modifier = {
-			factor = 3
-			has_government_reform = plutocracy
+			factor = 0
+			NOT = { num_of_total_ports = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			num_of_trade_companies = 1
+		}
+		modifier = {
+			factor = 5
+			num_of_trade_companies = 4
+		}
+        modifier = {
+            factor = 3
+			OR = { #Tier 1 reforms
+				has_reform = plutocracy
+				has_reform = trading_city
+				has_reform = venice_merchants_reform
+				has_reform = plutocratic_reform
+				has_reform = signoria_reform
+			}
+        }
+        modifier = {
+            factor = 3
+            primary_culture = hakka
+        }
+        modifier = {
+            factor = 3
+            is_colonial_nation = yes
+        }
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.33
 		}
 		modifier = {
 			factor = 3
-			has_government_reform = trading_city
+			trade_income_percentage = 0.66
 		}
 		modifier = {
-			factor = 3
-			has_government_reform = venice_merchants_reform
+			factor = 1.25
+			num_of_total_ports = 15
 		}
 		modifier = {
-			factor = 3
-			has_government_reform = plutocratic_reform
+			factor = 1.5
+			has_idea_group = exploration_ideas
 		}
-		modifier = {
-			factor = 3
-			has_government_reform = signoria_reform
-		}
-		modifier = {
-			factor = 3
-			primary_culture = hakka
-		}
-		modifier = {
-			factor = 3
-			is_colonial_nation = yes
-		}
-	}
+    }
 }
 
 exploration_ideas = {
@@ -1168,40 +1589,31 @@ exploration_ideas = {
 			factor = 1.1
 			num_of_ports = 20
 		}
-		modifier = {	#this makes spawned adventurers etc take exploration
-			factor = 2
-			AND = {
-				capital_scope = {
-					OR = {
-						continent = north_america
-						continent = south_america
-					}
-				}
+		modifier = {
+			factor = 1000
+			OR = {
+				tag = POR #Portugal
+				tag = CAS #Castile
+				tag = SPA #Spain
+				tag = NOR #Norway
+				tag = KIL #Kilwa
 			}
 		}
 		modifier = {
 			factor = 1000
-			OR = {
-				tag = A01 #Lorent
-				tag = A02 #Deranne
-				tag = A21 #Venail
-				tag = A33 #Verne
-				tag = A11 #Pearlsedge
-				tag = A47 #Eborthil
-				tag = A29 #Busilar
-				tag = Z18 #Frozenmaw
-				tag = Z50 #Grombar
-				tag = POR #Portugal
-				tag = SPA #Spain
-				tag = GBR #Great Britain
-				tag = NOR #Norway
-				tag = KIL #Kilwa
+			AND = {
+				OR = {
+					tag = ENG #England
+					tag = GBR #Great Britain
+				}
+				adm_tech = 7
 			}
 		}
 	}
 }
 
-maritime_ideas = {
+prestige_ideas = {
+	#prestige
 	category = DIP
 
 	bonus = {
@@ -1245,6 +1657,17 @@ maritime_ideas = {
 
 	ai_will_do = {
 		factor = 0.75
+		modifier = {
+			factor = 1.5
+			is_great_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			has_great_project = {
+				type = any
+				tier = 0
+			}
+		}
 	}
 }
 
@@ -1283,5 +1706,49 @@ mercenary_ideas = {
 	
 	mercenary_7 = {
 		may_perform_slave_raid_on_same_religion = yes
+	}
+
+	ai_will_do = {
+		factor = 0.5
+		modifier = {
+			factor = 1.5
+			ruler_has_personality = charismatic_negotiator_personality
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { num_of_mercenaries = 1 }
+		}
+		modifier = {
+			factor = 1.2
+			num_of_mercenaries = 4
+		}
+		modifier = {
+			factor = 1.5
+			num_of_mercenaries = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_mercenaries = 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_mercenaries = 20
+		}
+		modifier = {
+			factor = 0.8
+			army_professionalism = 0.2
+		}
+		modifier = {
+			factor = 0.6
+			army_professionalism = 0.4
+		}
+		modifier = {
+			factor = 0.4
+			army_professionalism = 0.6
+		}
+		modifier = {
+			factor = 0
+			army_professionalism = 0.8
+		}
 	}
 }
