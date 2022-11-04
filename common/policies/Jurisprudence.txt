@@ -4,15 +4,15 @@ supply_train_act = {
 
 	potential = {
 		has_idea_group = jurisprudence_ideas
-		has_idea_group = quality_ideas
+		has_idea_group = broadside_ideas
 		OR = {
 			full_idea_group = jurisprudence_ideas
-			full_idea_group = quality_ideas
+			full_idea_group = broadside_ideas
 		}	
 	}
 	allow = {
 		full_idea_group = jurisprudence_ideas
-		full_idea_group = quality_ideas
+		full_idea_group = broadside_ideas
 	}
 	
 	province_warscore_cost = -0.15
@@ -56,16 +56,16 @@ colonial_garrisons = {
 
 
 	potential = {
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		has_idea_group = jurisprudence_ideas
 		OR = {
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 			full_idea_group = jurisprudence_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 		full_idea_group = jurisprudence_ideas
 	}
 
@@ -193,16 +193,16 @@ taxation_with_representation = {
 new_order_act = {
 	monarch_power = ADM
 	potential = {
-		has_idea_group = spy_ideas
+		has_idea_group = campaign_ideas
 		has_idea_group = jurisprudence_ideas
 		OR = {
-			full_idea_group = spy_ideas
+			full_idea_group = campaign_ideas
 			full_idea_group = jurisprudence_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = spy_ideas
+		full_idea_group = campaign_ideas
 		full_idea_group = jurisprudence_ideas
 	}
 	

@@ -3,16 +3,16 @@ the_foreign_support_act = {
 
 
 	potential = {
-		has_idea_group = spy_ideas
+		has_idea_group = campaign_ideas
 		has_idea_group = economic_ideas
 		OR = {
-			full_idea_group = spy_ideas
+			full_idea_group = campaign_ideas
 			full_idea_group = economic_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = spy_ideas
+		full_idea_group = campaign_ideas
 		full_idea_group = economic_ideas
 	}
 
@@ -29,16 +29,16 @@ the_royal_commission_act = {
 
 
 	potential = {
-		has_idea_group = spy_ideas
+		has_idea_group = campaign_ideas
 		has_idea_group = administrative_ideas
 		OR = {
-			full_idea_group = spy_ideas
+			full_idea_group = campaign_ideas
 			full_idea_group = administrative_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = spy_ideas
+		full_idea_group = campaign_ideas
 		full_idea_group = administrative_ideas
 	}
 
@@ -55,15 +55,15 @@ weapon_quality_standards = {
 	
 	potential = {
 		has_idea_group = economic_ideas
-		has_idea_group = quality_ideas
+		has_idea_group = broadside_ideas
 		OR = {
 			full_idea_group = economic_ideas
-			full_idea_group = quality_ideas
+			full_idea_group = broadside_ideas
 		}	
 	}
 	allow = {
 		full_idea_group = economic_ideas
-		full_idea_group = quality_ideas
+		full_idea_group = broadside_ideas
 	}
 	
 	artillery_power = 0.1
@@ -83,16 +83,16 @@ the_tolerance_act = { # Lance of Righteousness Act
 
 	potential = {
 		has_idea_group = religious_ideas
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		OR = {
 			full_idea_group = religious_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = charge_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = religious_ideas
-		full_idea_group = plutocracy_ideas
+		full_idea_group = charge_ideas
 	}
 
 	tolerance_heretic = 3
@@ -169,16 +169,16 @@ the_provincial_taxation_system = {
 
 	potential = {
 		has_idea_group = administrative_ideas
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		OR = {
 			full_idea_group = administrative_ideas
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = administrative_ideas
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 	}
 	
 	num_accepted_cultures = 1
@@ -200,16 +200,16 @@ the_liquor_act = {
 	
 	
 	potential = {
-		has_idea_group = quality_ideas
+		has_idea_group = broadside_ideas
 		has_idea_group = administrative_ideas
 		OR = {
-			full_idea_group = quality_ideas
+			full_idea_group = broadside_ideas
 			full_idea_group = administrative_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = quality_ideas
+		full_idea_group = broadside_ideas
 		full_idea_group = administrative_ideas
 	}	
 	
@@ -266,16 +266,16 @@ superior_supply_system = {
 	monarch_power = MIL
 	
 	potential = {
-		has_idea_group = quality_ideas
+		has_idea_group = broadside_ideas
 		has_idea_group = exploration_ideas
 		OR = {
-			full_idea_group = quality_ideas
+			full_idea_group = broadside_ideas
 			full_idea_group = exploration_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = quality_ideas
+		full_idea_group = broadside_ideas
 		full_idea_group = exploration_ideas
 	}
 
@@ -351,16 +351,16 @@ modern_firearm_techniques = {
 	
 	potential = {
 		has_idea_group = innovativeness_ideas
-		has_idea_group = quality_ideas
+		has_idea_group = broadside_ideas
 		OR = {
 			full_idea_group = innovativeness_ideas
-			full_idea_group = quality_ideas
+			full_idea_group = broadside_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = innovativeness_ideas
-		full_idea_group = quality_ideas
+		full_idea_group = broadside_ideas
 	}
 	
 	artillery_power = 0.1
@@ -388,16 +388,16 @@ great_recovery_act = {
 	
 	potential = {
 		has_idea_group = innovativeness_ideas
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		OR = {
 			full_idea_group = innovativeness_ideas
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = innovativeness_ideas
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 	}
 
 	ship_capture_chance = 0.2
@@ -412,16 +412,16 @@ military_zeal_act = {
 	monarch_power = MIL
 	
 	potential = {
-		has_idea_group = quality_ideas
+		has_idea_group = broadside_ideas
 		has_idea_group = religious_ideas
 		OR = {
-			full_idea_group = quality_ideas
+			full_idea_group = broadside_ideas
 			full_idea_group = religious_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = quality_ideas
+		full_idea_group = broadside_ideas
 		full_idea_group = religious_ideas
 	}
 	
@@ -442,16 +442,16 @@ field_priests = {
 
 	potential = {
 		has_idea_group = religious_ideas
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		OR = {
 			full_idea_group = religious_ideas
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = religious_ideas
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 	}
 
 	naval_morale = 0.15
@@ -469,16 +469,16 @@ pen_rely_on_sword_act = {
 	monarch_power = MIL
 	potential = {
 		has_idea_group = diplomatic_ideas
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		OR = {
 			full_idea_group = diplomatic_ideas
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = diplomatic_ideas
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 	}
 	
 	allowed_marine_fraction = 0.1
@@ -568,16 +568,16 @@ the_smite_act = {
 hired_adventurers_act = {
 	monarch_power = MIL
 	potential = {
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		has_idea_group = exploration_ideas
 		OR = {
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 			full_idea_group = exploration_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 		full_idea_group = exploration_ideas
 	}
 
@@ -691,16 +691,16 @@ inspirational_leaders = {
 	
 	potential = {
 		has_idea_group = humanist_ideas
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		OR = {
 			full_idea_group = humanist_ideas
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = humanist_ideas
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 	}	
 	
 	global_ship_recruit_speed = -0.2
@@ -774,16 +774,16 @@ elite_regiments_act = {
 	
 	potential = {
 		has_idea_group = influence_ideas
-		has_idea_group = quantity_ideas
+		has_idea_group = boarding_ideas
 		OR = {
 			full_idea_group = influence_ideas
-			full_idea_group = quantity_ideas
+			full_idea_group = boarding_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = influence_ideas
-		full_idea_group = quantity_ideas
+		full_idea_group = boarding_ideas
 	}	
 
 	dip_advisor_cost = -0.25
@@ -799,16 +799,16 @@ light_cavalry_doctrine = {
 	
 	potential = {
 		has_idea_group = influence_ideas
-		has_idea_group = quality_ideas
+		has_idea_group = broadside_ideas
 		OR = {
 			full_idea_group = influence_ideas
-			full_idea_group = quality_ideas
+			full_idea_group = broadside_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = influence_ideas
-		full_idea_group = quality_ideas
+		full_idea_group = broadside_ideas
 	}	
 	
 	heavy_ship_cost = -0.1
@@ -844,16 +844,16 @@ danger_close_policy = {
 	
 	potential = {
 		has_idea_group = humanist_ideas
-		has_idea_group = spy_ideas
+		has_idea_group = campaign_ideas
 		OR = {
 			full_idea_group = humanist_ideas
-			full_idea_group = spy_ideas
+			full_idea_group = campaign_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = humanist_ideas
-		full_idea_group = spy_ideas
+		full_idea_group = campaign_ideas
 	}	
 	
 	manpower_recovery_speed = 0.2
@@ -888,12 +888,12 @@ weaponize_church_zeal_act = {
 	monarch_power = MIL
 	
 	potential = {
-		has_idea_group = spy_ideas
+		has_idea_group = campaign_ideas
 		has_idea_group = religious_ideas
 	}
 	
 	allow = {
-		full_idea_group = spy_ideas
+		full_idea_group = campaign_ideas
 		full_idea_group = religious_ideas
 	}
 
