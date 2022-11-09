@@ -29,14 +29,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_broadside_ideas"
-		texturefile = "gfx//interface//ideas//idea_quality_ideas.dds"
+		texturefile = "gfx//interface//ideas//idea_broadside_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
 		name = "GFX_idea_boarding_ideas"
-		texturefile = "gfx//interface//ideas//idea_quantity_ideas.dds"
+		texturefile = "gfx//interface//ideas//idea_boarding_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
