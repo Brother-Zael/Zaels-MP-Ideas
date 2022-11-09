@@ -2,7 +2,7 @@ version="anything"
 tags={
 	"Balance"
 }
-name="Zael's MP Ideas" # Special thanks to CoT for allowing use of their ASS code
+name="Zael's MP Ideas"
 picture="zaelscrappyideas.png"
 dependencies={
 	"Anbennar: A Fantasy Total Conversion Mod"

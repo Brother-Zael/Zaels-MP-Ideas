@@ -191,6 +191,7 @@ charge_ideas = {
 	bill_of_rights = {
 		cav_to_inf_ratio = 0.15
 		leader_land_shock = 1
+		leader_naval_shock = 1
 	}
 	ai_will_do = {
 		factor = 0.4
@@ -384,6 +385,7 @@ defensive_ideas = {
 
 	battlefield_commisions = {
 		land_morale = 0.1
+		naval_morale = 0.1
 		artillery_bonus_vs_fort = 1
 	}
 
@@ -429,7 +431,7 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		discipline = 0.025
+		discipline = 0.05
 		infantry_fire = 0.1
 	}
 	
@@ -463,6 +465,7 @@ offensive_ideas = {
 	}
 	napoleonic_warfare = {
 		leader_land_fire = 1
+		leader_naval_fire = 1
 		reserves_organization = -0.1
 	}
 
@@ -525,7 +528,7 @@ broadside_ideas = {
 	}
 
 	naval_drill = {
-		leader_naval_fire = 1
+		leader_naval_manuever = 1
 	}
 
 	copper_bottoms = {
@@ -607,11 +610,11 @@ boarding_ideas = {
 	}
 
 	the_old_and_infirm = {
-		galley_power = 0.2
+		galley_power = 0.33
 	}
 
 	expanded_supply_trains = {
-		leader_naval_manuever = 1
+		leader_naval_manuever = 2
 	}
 
 	ai_will_do = {
@@ -1318,10 +1321,9 @@ diplomatic_ideas = {
 		spy_offence = 0.5
 	}
 
-	war_cabinet = {
+	war_cabinet = { # change to "multicultural propoganda" or something
 		num_accepted_cultures = 2
 		manpower_in_accepted_culture_provinces = 0.1
-		special_unit_forcelimit = 0.1
 	}
 
 	benign_diplomats = {
@@ -1354,8 +1356,7 @@ influence_ideas = {
 	category = DIP
 
 	bonus = {
-		yearly_absolutism = 0.5
-		max_absolutism = 25
+		reduced_liberty_desire = 30
 	}
 
 	establish_cadet_branches = {
@@ -1388,7 +1389,7 @@ influence_ideas = {
 	}
 
 	integrated_elites = {
-		reduced_liberty_desire = 30
+		max_absolutism = 15
 		discipline = 0.025
 	}
 
@@ -1758,7 +1759,7 @@ mercenary_ideas = {
 	category = DIP
 	
 	bonus = {
-		war_exhaustion_cost = -0.2
+		special_unit_forcelimit = 0.1
 	}
 	
 	mercenary_1 = {
@@ -1785,6 +1786,7 @@ mercenary_ideas = {
 	
 	mercenary_6 = {
 		inflation_action_cost = -0.33
+		war_exhaustion_cost = -0.2
 	}
 	
 	mercenary_7 = {
