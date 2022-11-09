@@ -337,8 +337,8 @@ superior_fortification_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	artillery_damage_from_backrow = 0.2
-	artillery_bonus_vs_fort = 2
+	backrow_artillery_damage = 0.2
+	artillery_levels_available_vs_fort = 2
 
 
 	ai_will_do = {
@@ -923,7 +923,7 @@ edict_of_expulsion = { # Pillars of Salt Act
 		full_idea_group = religious_ideas
 	}
 
-	artillery_damage_from_backrow = 0.3
+	backrow_artillery_damage = 0.3
 
 	ai_will_do = {
 		factor = 1

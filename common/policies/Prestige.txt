@@ -197,16 +197,16 @@ land_of_plenty_act = {
 	
 	potential = {
 		has_idea_group = prestige_ideas
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		OR = {
 			full_idea_group = prestige_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group =charge_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = prestige_ideas
-		full_idea_group = plutocracy_ideas
+		full_idea_group = charge_ideas
 	}
 	
 	prestige = 0.5

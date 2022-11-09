@@ -149,16 +149,16 @@ taxation_with_representation = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = jurisprudence_ideas
-		has_idea_group = plutocracy_ideas
+		has_idea_group = charge_ideas
 		OR = {
 			full_idea_group = jurisprudence_ideas
-			full_idea_group = plutocracy_ideas
+			full_idea_group = charge_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = jurisprudence_ideas
-		full_idea_group = plutocracy_ideas
+		full_idea_group = charge_ideas
 	}
 	
 	global_autonomy = -0.05
