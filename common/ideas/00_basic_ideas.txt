@@ -380,13 +380,13 @@ defensive_ideas = {
 	}
 
 	imp_unit_protect = {
-		backrow_artillery_damage = 0.2
+		backrow_artillery_damage = 0.1
 	}
 
 	battlefield_commisions = {
 		land_morale = 0.1
 		naval_morale = 0.1
-		artillery_bonus_vs_fort = 1
+		artillery_levels_available_vs_fort = 1
 	}
 
 	ai_will_do = {
@@ -434,7 +434,7 @@ offensive_ideas = {
 		discipline = 0.05
 		infantry_fire = 0.1
 	}
-	
+
 	trigger = {
 		NOT = {
 			government = theocracy
@@ -449,7 +449,8 @@ offensive_ideas = {
 		leader_land_manuever = 1
 	}
 	national_conscripts = {
-		land_forcelimit = 8
+		manpower_recovery_speed = 0.2
+		land_forcelimit = 6
 	}
 	superior_firepower = {
 		army_tradition_decay = -0.01
@@ -466,7 +467,7 @@ offensive_ideas = {
 	napoleonic_warfare = {
 		leader_land_fire = 1
 		leader_naval_fire = 1
-		reserves_organization = -0.1
+		reserves_organisation = -0.1
 	}
 
 	ai_will_do = {
@@ -757,7 +758,7 @@ religious_ideas = {
 		stability_cost_modifier = -0.25
 	}
 	devoutness = {
-		tolerance_own = 2
+		tolerance_heretic = 2
 		papal_influence = 2
 		devotion = 0.5
 		monthly_fervor_increase = 0.25
@@ -766,7 +767,7 @@ religious_ideas = {
 		yearly_harmony = 1
 		monthly_piety_accelerator = 0.001
 		monthly_karma = 0.1
-		yearly_patriarch_authority = 0.01
+		yearly_patriarch_authority = 0.001
 	}
 	inquisition = {
 		missionaries = 1
@@ -824,7 +825,7 @@ christian_ideas = {
 	category = ADM
 	
 	trigger = {
-		religious_group = christian
+		religion_group = christian
 		NOT = {
 			has_idea_group = religious_ideas
 		}
@@ -834,43 +835,43 @@ christian_ideas = {
 		development_cost = -0.05
 	}
 	
-	theological seminaries = {
+	theological_seminaries = {
 		relation_with_same_religion = 15
-		missionaries = 2
-	}
-
-	tithes_of_the_faithful = {
-		global_tax_modifier = 0.33
-		global_tax_income = 12
+		global_religious_conversion_resistance = 0.5
 	}
 
 	deus_vult = {
 		cb_on_religious_enemies = yes
-		land_forcelimit_modifier = 0.15
+		enforce_religion_cost = -0.5
 	}
 
-	theological_colleges = {
+	inquisitors_exorcists_and_templars = {
 		missionary_maintenance_cost = -0.6
+		missionary_strength_vs_heretics = 0.05
+		missionaries = 2
+	}
+	
+	duty_to_the_word = {
 		papal_influence = 3
 		devotion = 1
 		monthly_fervor_increase = 0.4
 		church_power_modifier = 0.2
-		yearly_patriarch_authority = 0.02
+		yearly_patriarch_authority = 0.002
+		land_forcelimit_modifier = 0.15
 	}
 
-	inquisitors_exorcists_and_templars = {
-		global_religious_conversion_resistance = 0.5
-		enforce_religion_cost = -0.5
-		establish_order_cost = -0.2
+	peaceful_communes = {
+		tolerance_own = 4
 	}
 
 	ethik_und_der_gheist = {
-      production_efficiency = 0.1
+		production_efficiency = 0.2
+		global_tax_modifier = 0.2
 	}
 
 	Divine Right = {
        no_stability_loss_on_monarch_death = yes
-       clergy_estate_influence_modifier = 0.1
+       church_influence_modifier = 0.1
        max_absolutism = 15
 	}
 }
@@ -879,7 +880,7 @@ islam_ideas = {
 	category = ADM
 	
 	trigger = {
-		religious_group = islam
+		religion_group = muslim
 		NOT = {
 			has_idea_group = religious_ideas
 		}
@@ -900,19 +901,18 @@ islam_ideas = {
     }
 
     guardians of the law = {
-        monthly_piety_accelerator = -0.3 # to get more morale and spam manpower clicky asap
+        monthly_piety_accelerator = 0.003 # to get more morale and spam manpower clicky asap
         land_morale = 0.05
     }
 
     defense of the faithful = {
         cb_on_religious_enemies = yes
-        cav_to_inf_ratio = 0.2
     }
 
     in sha'allah = {
         reinforce_speed = 0.1
         tolerance_own = 2
-        devotion = 1
+        cav_to_inf_ratio = 0.2
     }
 
     Their own hand's work = {
@@ -921,6 +921,7 @@ islam_ideas = {
 
     din = {
         missionaries = 1
+        devotion = 1
         enforce_religion_cost = -0.7
     }
 }
@@ -1346,6 +1347,7 @@ jurisprudence_ideas = {
 
 	jurisprudence5	= {
 		num_accepted_cultures = 3
+		manpower_in_accepted_culture_provinces = 0.1
 		promote_culture_cost = -0.25
 	}
 
@@ -1355,7 +1357,7 @@ jurisprudence_ideas = {
 	}
 	
 	jurisprudence7 = {
-		governing_capacity = 500
+		governing_capacity = 300
 		all_estate_loyalty_equilibrium = 0.05
 		nomadic_tribes_loyalty_modifier = 0.05
 	}
@@ -1401,7 +1403,10 @@ diplomatic_ideas = {
 	category = DIP
 	
 	trigger = {
-		NOT = { has_idea_group = influence_ideas }
+		NOT = {
+			has_idea_group = influence_ideas
+			has_idea_group = prestige_ideas
+		}
 	}
 	
 	bonus = {
@@ -1440,6 +1445,7 @@ diplomatic_ideas = {
 	}
 
 	benign_diplomats = {
+		rebel_support_efficiency = 1
 		reduced_stab_impacts = yes
 	}
 
@@ -1464,12 +1470,78 @@ diplomatic_ideas = {
 	}
 }
 
+prestige_ideas = {
+	#prestige
+	category = DIP
+
+	bonus = {
+		land_forcelimit_modifier = 0.1
+		naval_forcelimit_modifier = 0.1
+	}
+	
+	prestige_1 = {
+		prestige = 2
+	}
+
+	prestige_2 = {
+		prestige_from_land = 0.5
+		prestige_from_naval = 0.5
+		claim_duration = 0.33
+	}
+
+	prestige_3 = {
+		merchants = 1
+		placed_merchant_power = 10
+	}
+
+	prestige_4 = {
+		power_projection_from_insults = 1
+	}
+
+	prestige_5 = {
+		great_project_upgrade_cost = -0.33
+		monthly_splendor = 3
+	}
+
+	prestige_6 = {
+		diplomatic_upkeep = 1
+		culture_conversion_cost = -0.2
+	}
+
+	prestige_7 = {
+		manpower_in_own_culture_provinces = 0.2
+		heir_chance = 0.35
+	}
+
+	ai_will_do = {
+		factor = 0.75
+		modifier = {
+			factor = 1.5
+			is_great_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			has_great_project = {
+				type = any
+				tier = 0
+			}
+		}
+	}
+}
+
 influence_ideas = {
 	# imperial
 	category = DIP
 
 	bonus = {
 		reduced_liberty_desire = 30
+	}
+	
+	trigger = {
+		NOT = { 
+			has_idea_group = diplomatic_ideas
+			has_idea_group = prestige_ideas
+		}
 	}
 
 	establish_cadet_branches = {
@@ -1497,13 +1569,14 @@ influence_ideas = {
 		vassal_forcelimit_bonus = 0.5
 	}
 
-	imp_magistrates = {
-		monarch_diplomatic_power = 1
+	integrated_elites = {  # Imperial Universities
+		idea_cost = -0.05
+		advisor_pool = 1
 	}
 
-	integrated_elites = {
+	imp_magistrates = {
+		monarch_diplomatic_power = 1
 		max_absolutism = 15
-		discipline = 0.025
 	}
 
 	ai_will_do = {
@@ -1809,65 +1882,6 @@ exploration_ideas = {
 	}
 }
 
-prestige_ideas = {
-	#prestige
-	category = DIP
-
-	bonus = {
-		land_forcelimit_modifier = 0.15
-		naval_forcelimit_modifier = 0.15
-	}
-	
-	prestige_1 = {
-		prestige = 2
-	}
-
-	prestige_2 = {
-		prestige_from_land = 0.5
-		prestige_from_naval = 0.5
-		claim_duration = 0.33
-	}
-
-	prestige_3 = {
-		merchants = 1
-		placed_merchant_power = 10
-	}
-
-	prestige_4 = {
-		power_projection_from_insults = 1
-	}
-
-	prestige_5 = {
-		great_project_upgrade_cost = -0.33
-		monthly_splendor = 3
-	}
-
-	prestige_6 = {
-		diplomatic_upkeep = 1
-		culture_conversion_cost = -0.2
-	}
-
-	prestige_7 = {
-		manpower_in_own_culture_provinces = 0.33
-		heir_chance = 0.35
-	}
-
-	ai_will_do = {
-		factor = 0.75
-		modifier = {
-			factor = 1.5
-			is_great_power = yes
-		}
-		modifier = {
-			factor = 1.2
-			has_great_project = {
-				type = any
-				tier = 0
-			}
-		}
-	}
-}
-
 mercenary_ideas = {
 	category = DIP
 	
@@ -1903,6 +1917,7 @@ mercenary_ideas = {
 	}
 	
 	mercenary_7 = {
+		privateer_efficiency = 0.25
 		may_perform_slave_raid_on_same_religion = yes
 	}
 

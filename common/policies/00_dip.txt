@@ -59,9 +59,8 @@ anti_smuggling_act = {
 		full_idea_group = offensive_ideas
 		full_idea_group = trade_ideas
 	}
-	
-	global_trade_power = 0.1
-	placed_merchant_power = 10
+
+	placed_merchant_power = 15
 
 	ai_will_do = {
 		factor = 1
@@ -505,8 +504,8 @@ policy_of_neutrality = {
 		full_idea_group = charge_ideas
 	}
 	
-	free_leader_pool = 2
-	possible_condottieri = 1
+	cavalry_cost = -0.05
+	trade_efficiency = 0.1
 
 	ai_will_do = {
 		factor = 0.8
@@ -529,7 +528,7 @@ professional_diplomatic_corps = {
 		full_idea_group = broadside_ideas
 	}
 	
-	special_unit_forcelimit = 0.05
+	siege_blockade_progress = 1
 	naval_tradition_from_battle = 1
 
 	ai_will_do = {

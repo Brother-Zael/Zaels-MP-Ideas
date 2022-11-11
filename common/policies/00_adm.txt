@@ -192,7 +192,7 @@ free_company_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	infantry_power = 0.1
+	infantry_power = 0.15
 
 	ai_will_do = {
 		factor = 1
@@ -294,8 +294,9 @@ land_inheritance_act = {
 		full_idea_group = charge_ideas
 	}
 
-	war_exhaustion = -0.03
-	yearly_corruption = -0.05
+	leader_land_shock = 1
+	leader_naval_shock = 1
+	cavalry_flanking = 0.5
 
 	ai_will_do = {
 		factor = 1
@@ -336,7 +337,7 @@ the_witchcraft_act = {
 		full_idea_group = aristocracy_ideas
 	}
 	
-	global_autonomy = -0.05
+	recover_army_morale_speed = 0.15
 	missionaries = 1
 
 	ai_will_do = {
@@ -399,7 +400,8 @@ the_education_act = {
 		full_idea_group = charge_ideas
 	}
 
-	reinforce_cost_modifier = -0.33
+	cavalry_power = 0.1
+	leader_land_manuever = 1
 
 	ai_will_do = {
 		factor = 0.8
@@ -423,7 +425,7 @@ policy_of_calculate_delay = {
 	}
 	
 	religious_unity = 0.25
-	global_missionary_strength = 0.02
+	trade_efficiency = 0.1
  
 
 	ai_will_do = {
@@ -468,6 +470,7 @@ exchange_of_ideas = {
 		full_idea_group = trade_ideas
 	}	
 	
+	idea_cost = -0.025
 	global_trade_goods_size_modifier = 0.1
 	
 	ai_will_do = {
@@ -517,8 +520,8 @@ cultural_recognition_act = {
 		full_idea_group = charge_ideas
 	}	
 
-	production_efficiency = 0.1
-	build_time = -0.1
+	cavalry_cost = -0.05
+	build_time = -0.2
 
 	ai_will_do = {
 		factor = 1
@@ -637,7 +640,7 @@ the_banking_system = {
 		full_idea_group = trade_ideas
 	}
 
-	production_efficiency = 0.1
+	caravan_power = 0.25
 	global_prosperity_growth = 0.05
 
 
@@ -681,6 +684,7 @@ multilingual_diplomats = {
 	}	
 
 	global_unrest = -6
+	promote_culture_cost = -0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -704,7 +708,7 @@ the_foreign_aid_act = {
 		full_idea_group = influence_ideas
 	}	
 	
-	diplomatic_reputation = 2
+	diplomatic_reputation = 1
 	liberty_desire_from_subject_development = -0.25
 	
 	ai_will_do = {
@@ -729,8 +733,7 @@ anti_heresy_act = { # Wrath of God Act
 		full_idea_group = offensive_ideas
 	}
 	
-	recover_army_morale_speed = 0.25
-	land_forcelimit_modifier = 0.1
+	reserves_organisation = -0.15
 
 	ai_will_do = {
 		factor = 1
@@ -844,7 +847,7 @@ industrial_transport = {
 	}	
 	
 	ship_durability = 0.05
-	sailor_recovery_speed = 0.2
+	sailors_recovery_speed = 0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -934,7 +937,7 @@ industrial_cavalry_raiders = {
 		full_idea_group = aristocracy_ideas
 	}	
 
-	army_tradition_decay = -0.01
+	country_admin_power = 1
 	monarch_lifespan = 5
 	
 	ai_will_do = {
@@ -1015,8 +1018,9 @@ vassal_integration_act = {
 		full_idea_group = administrative_ideas
 	}	
 
-	country_diplpomatic_power = 1
-	prestige_decay = -0.01
+	monthly_splendor = 3
+	imperial_authority_value = 0.1
+	imperial_mandate = 0.1
 	
 	ai_will_do = {
 		factor = 1

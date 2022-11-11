@@ -1,0 +1,23 @@
+policy_of_recruitment = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = campaign_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = campaign_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = campaign_ideas
+	}
+	
+	free_leader_pool = 2
+	possible_condottieri = 1
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
