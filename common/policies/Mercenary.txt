@@ -21,3 +21,291 @@ policy_of_recruitment = {
 		factor = 0.8
 	}
 }
+
+attract_new_blood_policy = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = innovative_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = innovative_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = innovative_ideas
+	}
+	
+	global_institution_spread = 0.2
+	advisor_pool = 1
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+absolvement_of_guilt_policy = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = religious_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = religious_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = religious_ideas
+	}
+	
+	mercenary_cost = -0.2
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+absolvement_of_guilt_policy = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = economic_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = economic_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = economic_ideas
+	}
+	
+	merc_maintenance_modifier = -0.1
+	loot_amount = 1
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+absolvement_of_guilt_policy = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = humanist_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = humanist_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = humanist_ideas
+	}
+	
+	global_unrest = -2
+	global_tax_modifier = 0.2
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+honor_guard_policy = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = administrative_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = administrative_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = administrative_ideas
+	}
+	
+	monarch_lifespan = 1
+	yearly_prestige = 1
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+institutionalize_local_militias_policy = {
+	monarch_power = ADM
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = jurisprudence_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = jurisprudence_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = jurisprudence_ideas
+	}
+	
+	mercenary_manpower = 1
+	promote_culture_cost = -0.15
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+retain_foreign_educators_policy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = aristocracy_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = aristocracy_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	
+	army_tradition = 0.5
+	navy_tradition = 0.5
+	mercenary_discipline = 0.05
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+cossack_invitations_policy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = charge_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = charge_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = charge_ideas
+	}
+	
+	cav_to_inf_ratio = 0.1
+	leader_land_shock = 1
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+hire_italian_siege_engineers_policy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = defensive_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = defensive_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = defensive_ideas
+	}
+	
+	garrison_size = 0.2
+	leader_land_siege = 1
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+commission_foreign_drill_sergeants_policy = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = offensive_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = offensive_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = offensive_ideas
+	}
+	
+	drill_decay_modifier = -0.75
+	drill_gain_modifier = 0.33
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+subsidize_letters_of_mark_policy = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = broadside_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = broadside_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = broadside_ideas
+	}
+	
+	privateer_efficiency = 0.33
+	blockade_efficiency = 0.2
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}
+
+permanent_wrecking_crews_policy = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = aristocracy_ideas
+		OR = {
+			full_idea_group = mercenary_ideas
+			full_idea_group = aristocracy_ideas
+		}
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	
+	capture_ship_chance = 0.33
+	leader_naval_manuever = 1
+
+	ai_will_do = {
+		factor = 0.8
+	}
+}

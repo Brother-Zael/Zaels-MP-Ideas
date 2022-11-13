@@ -467,7 +467,7 @@ offensive_ideas = {
 	napoleonic_warfare = {
 		leader_land_fire = 1
 		leader_naval_fire = 1
-		reserves_organisation = -0.1
+		reserves_organisation = 0.1
 	}
 
 	ai_will_do = {
@@ -747,7 +747,7 @@ religious_ideas = {
 		missionary_maintenance_cost = -0.33
 	}
 	church_attendance_duty = {
-		same_culture_advisor_cost = -0.33
+		same_culture_advisor_cost = -0.25
 		global_tax_income = 18
 	}
 	deus_vult = {
@@ -771,10 +771,9 @@ religious_ideas = {
 	}
 	inquisition = {
 		missionaries = 1
-		enforce_religion_cost = -0.7
 	}
 	religious_tradition = {
-		land_forcelimit_modifier = 0.1
+		recover_army_morale_speed = 0.1
 		culture_conversion_cost = -0.5
 	}
 
@@ -836,13 +835,13 @@ christian_ideas = {
 	}
 	
 	theological_seminaries = {
-		relation_with_same_religion = 15
+		relation_with_same_religion = 20
 		global_religious_conversion_resistance = 0.5
 	}
 
 	deus_vult = {
 		cb_on_religious_enemies = yes
-		enforce_religion_cost = -0.5
+		enforce_religion_cost = -0.7
 	}
 
 	inquisitors_exorcists_and_templars = {
@@ -1039,7 +1038,7 @@ economic_ideas = {
 		production_efficiency = 0.2
 	}
 	centralization = {
-		global_autonomy = -0.1
+		global_autonomy = -0.01
 	}
 	debt_and_loans = {
 		interest = -1
@@ -1123,10 +1122,11 @@ humanist_ideas = {
 	encourage_the_guilds = {
 		burghers_loyalty_modifier = 0.1
 		jains_loyalty_modifier = 0.1
+		global_tax_modifier = 0.4
 	}
 
 	advanced_tools = {
-		global_tax_modifier = 0.4
+		global_autonomy = -0.1
 	}
 
 	manage_the_borough = {
@@ -1886,7 +1886,7 @@ mercenary_ideas = {
 	category = DIP
 	
 	bonus = {
-		special_unit_forcelimit = 0.1
+		may_perform_slave_raid_on_same_religion = yes
 	}
 	
 	mercenary_1 = {
@@ -1918,7 +1918,7 @@ mercenary_ideas = {
 	
 	mercenary_7 = {
 		privateer_efficiency = 0.25
-		may_perform_slave_raid_on_same_religion = yes
+		special_unit_forcelimit = 0.1
 	}
 
 	ai_will_do = {
