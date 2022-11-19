@@ -82,16 +82,29 @@ the_tolerance_act = { # Lance of Righteousness Act
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		has_idea_group = charge_ideas
 		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 			full_idea_group = charge_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 		full_idea_group = charge_ideas
 	}
 
@@ -413,16 +426,29 @@ military_zeal_act = {
 	
 	potential = {
 		has_idea_group = broadside_ideas
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		OR = {
 			full_idea_group = broadside_ideas
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = broadside_ideas
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 	}
 	
 	recover_army_morale_speed = 0.1
@@ -441,16 +467,29 @@ field_priests = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		has_idea_group = boarding_ideas
 		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 			full_idea_group = boarding_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 		full_idea_group = boarding_ideas
 	}
 
@@ -889,12 +928,22 @@ weaponize_church_zeal_act = {
 	
 	potential = {
 		has_idea_group = campaign_ideas
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 	}
 	
 	allow = {
 		full_idea_group = campaign_ideas
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 	}
 
 	military_tactics = 0.1
@@ -911,16 +960,29 @@ edict_of_expulsion = { # Pillars of Salt Act
 
 	potential = {
 		has_idea_group = defensive_ideas
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		OR = {
 			full_idea_group = defensive_ideas
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = defensive_ideas
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 	}
 
 	backrow_artillery_damage = 0.2

@@ -5,6 +5,44 @@
  pragmatism:0 "Pragmatism"
  pragmatism_desc:0 "New ideas means a more advanced nation, it's that simple. Priority shall henceforth be placed in acquiring new ideas and tasking them to the benefit of our country."
 
+ ########## Christian ###########
+ christian_ideas:0 "Christian Ideas"
+ christian_ideas_bonus:0 "Full Christian"
+ theological_seminaries:0 "Theological Seminaries"
+ theological_seminaries_desc:0 "Let us send clergy and lay people to seminaries sponsored by the state church, where they can meet other like-minded individuals and learn from approved content."
+ inquisitors_exorcists_and_templars:0 "Inquisitors, Exorcists, and Templars"
+ inquisitors_exorcists_and_templars_desc:0 "It is time to utilize our seminaries to train more specific professionals in attempts to root out heresy, syncreticism, and other affronts to the Father."
+ duty_to_the_word:0 "Duty to the Word"
+ duty_to_the_word_desc:0 "It is not just the clergy and knights who are bound by holy duty. We must make it our every effort to live closer to the Father's state-apporved holy gospel."
+ peaceful_communes:0 "Peaceful Communes"
+ peaceful_communes_desc:0 "Once all the heretics and heathens are dealt with, it is clear ours is a religion of peace and tranquil contemplation."
+ ethik_und_der_gheist:0 "Ethik und der Gheist"
+ ethik_und_der_gheist_desc:0 "Christ said we are called to be servants of others, and who better to serve than our God-blessed nation?"
+ divine_right:0 "Divine Right"
+ divine_right_desc:0 "The clergy have graciously offered to fulfill their long-abandoned duty of investing our rulers! We should utilize this selfless offer to prove our divine right to rule God's chosen people!"
+ 
+ ########## Islam ##########
+ islam_ideas:0 "Islamic Ideas"
+ islam_ideas_bonus:0 "Full Islam"
+ jihad:0 "Jihad"
+ jihad_desc:0 "By the grace of Allah, our struggle, our Jihad, is to bring the knowledge and peace of Allah to all their creatures."
+ dhimmi_laws:0 "Dhimmi Laws"
+ dhimmi_laws_desc:0 "The Prophet, peace be upon him, made clear in the Qur'an that we must not infringe upon the actions of our wayward cousins, the christians and the jews, who unfortunately have far less morale qualms with financial policies than Allah's faithful."
+ guardians_of_the_law:0 "Guardians of the Law"
+ guardians_of_the_law_desc:0 "Come on soldiers! Guardians and agents of the supreme law! Here is a sacrifice of dogs ready for your swords! -Il'Ghazi"
+ defense_of_the_faithful:0 "Defense of the Faithful"
+ defense_of_the_faithful_desc:0 "We cannot sit idly while our brothers struggle alone under the auspicies of the most vile heretical regimes, responsible for fragmenting the ummah!"
+ in_shaallah:0 "In sha'Allah"
+ in_shaallah_desc:0 "If Allah wills it, than it shall be. Let us look to the Qur'an, the Hadiths, and the actions of the Prophet, peace be upon him, to guide our lives today."
+ their_own_hands_work:0 "Their Own Hands Work"
+ their_own_hands_work_desc:0 "The Qur'an is clear on this. We must toil and benefit only from what we ourselves can produce. Let us not be greedy like pigs, franks, and other beasts."
+ din:0 "Din"
+ din_desc:0 "Din recognize din. We shall live as Allah wills, or face eternal damnation."
+ 
+ ########## Zoroastrian ##########
+ zoroastrian_ideas:0 "Zoroastrian Ideas"
+ zoroastrian_ideas_bonus:0 "Full Zoroastrian"
+ 
  ########## Religious ###########
  
  religious_tradition:0 "Religious Fervor"
@@ -172,8 +210,8 @@
  leadership_7_desc:0 "All the investments we've placed into cultivation the leadership of our nation has begun to show it's value. It's very valuable."
 
  ### Prestige ###
- prestige_ideas:0 "Prestige Ideas"
- prestige_ideas_bonus:0 "Full Prestige"
+ prestige_ideas:0 "Nationalist Ideas"
+ prestige_ideas_bonus:0 "Full Nationalist"
  prestige_1:0 "Glorious Realm"
  prestige_1_desc:0 "Truly ours is the most glorious, most worthy, most impressive realm that has ever been."
  prestige_2:0 "Manifest Destiny"
@@ -191,7 +229,8 @@
 
  ### Diplomatic ###
  
- diplomatic_ideas:0 "Diplomatic Ideas Dip"
+ diplomatic_ideas:0 "Internationalist Ideas Dip"
+ diplomatic_ideas_bonus:0 "Full Internationalist"
  dip_honour:0 "Honourable State"
  dip_honour_desc:0 "Our state diplomacy has managed to construct an image of our nation in a very good light, our reputation leaves us as one of the few honourable nations in the world."
  diplomatic_corps:0 "Propoganda Corps"

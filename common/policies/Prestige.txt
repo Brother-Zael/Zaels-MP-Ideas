@@ -34,16 +34,29 @@ good_news_act = {
 	
 	potential = {
 		has_idea_group = prestige_ideas
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		OR = {
 			full_idea_group = prestige_ideas
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = prestige_ideas
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 	}
 	
 	global_missionary_strength = 0.01

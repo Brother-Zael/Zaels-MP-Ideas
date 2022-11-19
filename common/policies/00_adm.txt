@@ -324,16 +324,29 @@ the_witchcraft_act = {
 	monarch_power = ADM
 
 	potential = {
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		has_idea_group = aristocracy_ideas
 		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 			full_idea_group = aristocracy_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 		full_idea_group = aristocracy_ideas
 	}
 	
@@ -411,16 +424,29 @@ the_education_act = {
 policy_of_calculate_delay = {
 	monarch_power = ADM
 	potential = {
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		has_idea_group = diplomatic_ideas
 		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 			full_idea_group = diplomatic_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 		full_idea_group = diplomatic_ideas
 	}
 	
@@ -535,16 +561,29 @@ restrictions_for_colonies = {
 	
 	potential = {
 		has_idea_group = exploration_ideas
-		has_idea_group = religious_ideas
 		OR = {
-			full_idea_group = exploration_ideas
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
 			full_idea_group = religious_ideas
 		}
 	}
 	
 	allow = {
 		full_idea_group = exploration_ideas
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 	}
 
 	native_assimilation = 0.25
@@ -720,20 +759,33 @@ anti_heresy_act = { # Wrath of God Act
 	monarch_power = ADM
 	
 	potential = {
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		has_idea_group = offensive_ideas
 		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
 			full_idea_group = religious_ideas
 			full_idea_group = offensive_ideas
 		}
 	}
 	
 	allow = {
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 		full_idea_group = offensive_ideas
 	}
 	
-	reserves_organisation = -0.15
+	reserves_organisation = 0.15
 
 	ai_will_do = {
 		factor = 1

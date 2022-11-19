@@ -87,12 +87,22 @@ esprit_de_corps_policy = {
 	monarch_power = ADM
 	
 	potential = {
-		has_idea_group = religious_ideas
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 		has_idea_group = horde_gov_ideas
 	}
 	
 	allow = {
-		full_idea_group = religious_ideas
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 		full_idea_group = horde_gov_ideas
 	}
 	
