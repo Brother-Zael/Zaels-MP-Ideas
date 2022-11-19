@@ -841,7 +841,7 @@ christian_ideas = {
 		global_religious_conversion_resistance = 0.5
 	}
 
-	deus_vult = {
+	uphold_gods_will = {
 		cb_on_religious_enemies = yes
 	}
 
