@@ -2,7 +2,7 @@ update_ass_points = {
 	hidden_effect = {
 		set_variable = {
 			which = MaxAssPoints
-			value = 6
+			value = 10
 		}
 		set_variable = {
 			which = UsedAssPointsMinor

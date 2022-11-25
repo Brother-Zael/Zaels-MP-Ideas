@@ -25,12 +25,22 @@ state_exorcist_training_act = {
 	
 	potential = {
 		has_idea_group = naval_ideas
-		has_any_religious_ideas = yes
+		OR = {
+			has_idea_group = christian_ideas
+			has_idea_group = islam_ideas
+			has_idea_group = zoroastrian_ideas
+			has_idea_group = religious_ideas
+		}
 	}
 	
 	allow = {
 		full_idea_group = naval_ideas
-		completed_any_religious_ideas = yes
+		OR = {
+			full_idea_group = christian_ideas
+			full_idea_group = islam_ideas
+			full_idea_group = zoroastrian_ideas
+			full_idea_group = religious_ideas
+		}
 	}
 	
 	naval_attrition = -0.1

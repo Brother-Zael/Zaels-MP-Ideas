@@ -1,5 +1,33 @@
 spriteTypes = {
     spriteType = {
+        name = "GFX_idea_buddhist_ideas"
+        texturefile = "gfx//interface//ideas//idea_buddhist_ideas.dds"
+        noOfFrames = 1
+        
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_idea_hindu_ideas"
+        texturefile = "gfx//interface//ideas//idea_hindu_ideas.dds"
+        noOfFrames = 1
+        
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_idea_islamic_ideas"
+        texturefile = "gfx//interface//ideas//idea_islamic_ideas.dds"
+        noOfFrames = 1
+        
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
+        name = "GFX_idea_christian_ideas"
+        texturefile = "gfx//interface//ideas//idea_christian_ideas.dds"
+        noOfFrames = 1
+        
+        effectFile = "gfx/FX/buttonstate.lua"
+    }
+    spriteType = {
         name = "GFX_idea_jurisprudence_ideas"
         texturefile = "gfx//interface//ideas//idea_jurisprudence_ideas.dds"
         noOfFrames = 1

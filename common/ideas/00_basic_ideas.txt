@@ -451,7 +451,7 @@ offensive_ideas = {
 	}
 	national_conscripts = {
 		manpower_recovery_speed = 0.2
-		land_forcelimit = 6
+		reinforce_speed = 0.1
 	}
 	superior_firepower = {
 		army_tradition_decay = -0.01
@@ -468,7 +468,7 @@ offensive_ideas = {
 	napoleonic_warfare = {
 		leader_land_fire = 1
 		leader_naval_fire = 1
-		reserves_organisation = 0.1
+		land_forcelimit = 6
 	}
 
 	ai_will_do = {
@@ -736,6 +736,8 @@ religious_ideas = {
 			has_idea_group = zoroastrian_ideas
 			has_idea_group = christian_ideas
 			has_idea_group = islam_ideas
+			has_idea_group = buddhist_ideas
+			has_idea_group = hindu_ideas
 		}
 	}
 
@@ -865,14 +867,13 @@ christian_ideas = {
 	}
 
 	ethik_und_der_gheist = {
-		production_efficiency = 0.2
-		global_tax_modifier = 0.2
+		production_efficiency = 0.1
+		global_tax_modifier = 0.1
 	}
 
 	divine_right = {
        no_stability_loss_on_monarch_death = yes
        church_influence_modifier = 0.1
-       max_absolutism = 15
 	}
 }
 
@@ -1008,6 +1009,107 @@ zoroastrian_ideas = {
 	}
 }
 
+hindu_ideas = {
+	category = ADM
+	
+	trigger = {
+		religion = hinduism
+		primitives = no
+		NOT = {
+			has_idea_group = religious_ideas
+		}
+	}
+	
+	bonus = {
+		development_cost = -0.05
+	}
+	
+	purusharthas = { # the 4 goals in life. Live Ethically (Dharma), Obtain Wealth (Artha), Experience Sensual Pleasure (Kama), and Reach Nirvana (Moksha)
+		global_tax_income = 12
+		heir_chance = 0.9
+	}
+	
+	sadhana = { # accomplish goals and liberation from bondage
+		cb_on_religious_enemies = yes
+	}
+	
+	festivals = { # many festivals to celebrate accomplishing goals in life and achieving liberation from bonds
+		global_unrest = -3
+		years_of_nationalism = -5
+	}
+	
+	authority = { # respect elders but question authority in search of ultimate truth
+		technology_cost = -0.05
+		yearly_absolutism = 0.1
+	}
+	
+	bhakti = { # worship/devotion of personal god
+		devotion = 2
+		republican_tradition = 0.5
+		legitimacy = 2
+		horde_unity = 1
+	}
+	
+	karma = { # points for the next life
+		build_time = -0.1
+		manpower_in_true_faith_provinces = 0.25
+	}
+	
+	samsara = { # the cycle of rebirth, painful and what we must try to escape from
+		global_monthly_devastation = -0.1	
+	}
+	
+}
+
+buddhist_ideas = {
+    category = ADM
+    
+    trigger = {
+        religion_group = buddhism
+        primitives = no
+        NOT = {
+            has_idea_group = religious_ideas
+        }
+    }
+    
+    bonus = {
+        development_cost = -0.05
+    }
+    
+    right_view = { # something about "the many paths to enlightenment", jesus/muhammad was a buddha, etc.
+        tolerance_heathen = 3
+        relation_with_same_religion = 20
+        relation_with_heathens = 20
+    }
+    
+    right_effort = { # the sangha
+        num_accepted_cultures = 2
+        global_unrest = -1
+    }
+    
+    right_concentration = { # meditation 
+        stability_cost_modifier = -0.33
+    }
+    
+    right_intention = { # good thoughts is no war
+        monthly_karma_accelerator = -0.02
+        stability_cost_to_declare_war = 1
+    }
+    
+    right_mindfulness = { # institution stuff
+        global_institution_spread =0.3
+    }
+    
+    right_action = { # service by requirement
+        land_morale = 0.1
+        extra_manpower_at_religious_war = yes
+    }
+    
+    right_speech = { # something diplo related again?
+        monthly_splendor = 2
+    }
+}
+
 economic_ideas = {
 	category = ADM
 
@@ -1039,7 +1141,7 @@ economic_ideas = {
 		production_efficiency = 0.2
 	}
 	centralization = {
-		global_autonomy = -0.01
+		global_autonomy = -0.1
 	}
 	debt_and_loans = {
 		interest = -1
@@ -1474,6 +1576,13 @@ diplomatic_ideas = {
 prestige_ideas = {
 	#prestige
 	category = DIP
+
+	trigger = {
+		NOT = {
+			has_idea_group = influence_ideas
+			has_idea_group = diplomatic_ideas
+		}
+	}	
 
 	bonus = {
 		land_forcelimit_modifier = 0.1
